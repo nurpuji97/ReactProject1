@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 
 const Home = () => {
   return (
-    <div className="relative mt-20">
+    <div className="relative mt-24">
       <Navbar />
       <h1 className="text-primary-shades-300 dark:text-primary-light">
         hello World

@@ -3,12 +3,20 @@ module.exports = {
   darkMode: "class",
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
-    "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}",
+    "./node_modules/tw-elements/dist/js/**/*.js",
   ],
   theme: {
     extend: {},
     fontFamily: {
       sans: ["Lato", "sans-serif"],
+    },
+    screens: {
+      es: "320px",
+      sm: "640px",
+      md: "760px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
     },
     colors: {
       transparent: "transparent",
@@ -43,5 +51,5 @@ module.exports = {
       secondary: "#CEFC86",
     },
   },
-  plugins: [require("flowbite/plugin")],
+  plugins: [require("tw-elements/dist/plugin")],
 };

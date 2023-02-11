@@ -5,11 +5,11 @@
 @layer components {
   /* navbar */
   .navbar {
-    @apply fixed left-0 right-0 top-0 py-5 px-20 flex justify-between bg-primary-tints-500;
+    @apply fixed left-0 right-0 top-0 py-5 px-20 flex justify-between bg-primary-tints-500 es:max-lg:flex-col es:max-lg:px-10 shrink-0 shadow-md;
   }
 
   .col-1 {
-    @apply flex items-center gap-7;
+    @apply flex items-center gap-7 es:max-lg:flex-col es:max-lg:items-start;
   }
 
   .logo {
@@ -17,23 +17,24 @@
   }
 
   .menu {
-    @apply flex gap-3;
+    @apply flex gap-3 es:max-lg:flex-col es:max-lg:self-center es:max-lg:w-[100%] es:max-lg:mb-2;
   }
 
   .btn {
     @apply flex py-2 px-3 text-primary-shades-200 text-sm
-   hover:bg-primary-default hover:text-primary-shades-500 hover:rounded hover:font-medium;
+   hover:bg-primary-default hover:text-primary-shades-500 hover:rounded hover:font-medium es:max-lg:justify-center;
   }
 
   .col-2 {
-    @apply flex gap-3;
+    @apply flex gap-3 es:max-lg:flex-col es:max-lg:mt-2;
   }
 
   .dropdown-menu {
-    @apply absolute right-32 top-0  z-10 bg-white rounded-lg shadow-xl py-4 px-1 border;
+    @apply absolute right-32 top-0 z-10 bg-white rounded-lg shadow-md py-4 px-1 border es:max-lg:absolute es:max-lg:z-0 es:max-lg:right-0 es:max-lg:left-0 es:max-lg:top-[230px] es:max-lg:rounded-none es:max-lg:border-none es:max-lg:bg-primary-tints-500 es:max-lg:px-10;
   }
 
   .dropdown-menu-list {
-    @apply flex gap-2 px-4 py-2 hover:bg-primary-tints-400;
+    @apply flex gap-2 px-4 py-2 hover:bg-primary-tints-400 hover:rounded es:max-lg:justify-center
+    es:max-lg:hover:bg-primary-default;
   }
 }

@@ -1,25 +1,25 @@
 import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Image from "../images/Logo.png";
 import IndonesiaFlag from "../images/indonesia.png";
 import EnglishFlag from "../images/united-kingdom.png";
 import ArabFlag from "../images/saudi-arabia.png";
-import { IoCaretDown } from "react-icons/io5";
-import { useDispatch, useSelector } from "react-redux";
+import { IoCaretDown, IoClose, IoMenuSharp } from "react-icons/io5";
+import { useDispatch } from "react-redux";
 import { DarkActions } from "../store/DarkSlice";
 import { useTranslation } from "react-i18next";
 import i18n from "../i18n";
 import { LanguageActions } from "../store/LanguageSlice";
 
 const Navbar = () => {
+  // dropdown Menu Mobile
+  const [isActive, setIsActive] = useState(true);
+
   // dropdown State
   const [isOpen, setIsOpen] = useState(false);
 
   // use Translation
   const { t } = useTranslation();
-
-  // Redux Language
-  const language = useSelector((state) => state.language.isLanguage);
 
   // dispath deklarasi
   const dispatch = useDispatch();
@@ -37,14 +37,18 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className={`navbar `}>
+      <nav className="navbar">
         {/* column 1 */}
-        <div className="col-1">
+        <div className="col-1 ">
           {/* logo */}
           <img src={Image} alt="logo" className="logo" />
 
           {/* menu */}
-          <ul className="menu">
+          <ul
+            className={`menu ${
+              isActive ? "es:max-lg:block" : "es:max-lg:hidden"
+            }`}
+          >
             <li>
               <NavLink className="btn" to="">
                 {t("home")}
@@ -68,28 +72,58 @@ const Navbar = () => {
           </ul>
         </div>
 
+        <hr
+          className={`text-primary-tints-100 relative  ${
+            isActive ? "block" : "hidden"
+          } `}
+        />
+
         {/* column 2 */}
         <div className="col-2">
           {/* dropdown */}
-          <button onClick={() => setIsOpen(!isOpen)} className="btn">
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className={`btn es:max-lg:order-2  ${
+              isActive ? "es:max-lg:flex" : "es:max-lg:hidden"
+            } `}
+          >
             {t("bahasa")}
             <IoCaretDown className="self-center ml-4" />
           </button>
 
           {/* toggle */}
-          <label className="relative inline-flex items-center cursor-pointer">
-            <input
-              type="checkbox"
-              onClick={swicthMode}
-              className="sr-only peer"
-            />
-            <div className="w-9 h-5 bg-primary-tints-300 peer-focus:outline-none peer-focus:ring-0 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[12px] after:left-[6px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-3 after:w-3 after:transition-all dark:border-gray-600 peer-checked:bg-primary-shades-300"></div>
-          </label>
+          <div
+            className={`flex justify-center items-center  ${
+              isActive ? "es:max-lg:flex" : "es:max-lg:hidden"
+            } `}
+          >
+            <div className="form-check form-switch">
+              <input
+                className="form-check-input appearance-none w-9 -ml-10 rounded-full float-left h-5 align-top bg-primary-tints-300 bg-no-repeat bg-contain bg-gray-300 focus:outline-none cursor-pointer shadow-es"
+                type="checkbox"
+                role="switch"
+                id="flexSwitchCheckDefault"
+                onClick={swicthMode}
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* burger */}
+        <div
+          className="absolute top-4 right-12 lg:hidden"
+          onClick={() => setIsActive(!isActive)}
+        >
+          {isActive ? (
+            <IoClose className="w-10 h-10" />
+          ) : (
+            <IoMenuSharp className="w-10 h-10" />
+          )}
         </div>
       </nav>
 
       {/* <!-- Dropdown menu --> */}
-      {isOpen && (
+      {isActive && isOpen && (
         <ul className="dropdown-menu">
           <li className="dropdown-menu-list">
             <img src={IndonesiaFlag} className="w-6" alt="indo-flag" />
