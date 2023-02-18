@@ -13,7 +13,7 @@ import { LanguageActions } from "../store/LanguageSlice";
 
 const Navbar = () => {
   // dropdown Menu Mobile
-  const [isActive, setIsActive] = useState(true);
+  const [isActive, setIsActive] = useState(false);
 
   // dropdown State
   const [isOpen, setIsOpen] = useState(false);
@@ -89,6 +89,35 @@ const Navbar = () => {
           >
             {t("bahasa")}
             <IoCaretDown className="self-center ml-4" />
+
+            {isOpen && (
+              <ul className="dropdown-menu">
+                <li className="dropdown-menu-list">
+                  <img src={IndonesiaFlag} className="w-6" alt="indo-flag" />
+                  <button
+                    onClick={() => handleLanguageChange("id")}
+                    className="self-center"
+                  >
+                    {" "}
+                    {t("indonesia")}
+                  </button>
+                </li>
+                <li className="dropdown-menu-list">
+                  <img src={EnglishFlag} className="w-6" alt="indo-flag" />
+                  <button onClick={() => handleLanguageChange("en")}>
+                    {" "}
+                    {t("inggris")}
+                  </button>
+                </li>
+                <li className="dropdown-menu-list">
+                  <img src={ArabFlag} className="w-6" alt="indo-flag" />
+                  <button onClick={() => handleLanguageChange("ar")}>
+                    {" "}
+                    {t("arab")}
+                  </button>
+                </li>
+              </ul>
+            )}
           </button>
 
           {/* toggle */}
@@ -111,7 +140,7 @@ const Navbar = () => {
 
         {/* burger */}
         <div
-          className="absolute top-4 right-5 lg:hidden "
+          className="absolute top-4 right-5 lg:hidden cursor-pointer "
           onClick={() => setIsActive(!isActive)}
         >
           {isActive ? (
@@ -123,34 +152,6 @@ const Navbar = () => {
       </nav>
 
       {/* <!-- Dropdown menu --> */}
-      {isActive && isOpen && (
-        <ul className="dropdown-menu">
-          <li className="dropdown-menu-list">
-            <img src={IndonesiaFlag} className="w-6" alt="indo-flag" />
-            <button
-              onClick={() => handleLanguageChange("id")}
-              className="self-center"
-            >
-              {" "}
-              {t("indonesia")}
-            </button>
-          </li>
-          <li className="dropdown-menu-list">
-            <img src={EnglishFlag} className="w-6" alt="indo-flag" />
-            <button onClick={() => handleLanguageChange("en")}>
-              {" "}
-              {t("inggris")}
-            </button>
-          </li>
-          <li className="dropdown-menu-list">
-            <img src={ArabFlag} className="w-6" alt="indo-flag" />
-            <button onClick={() => handleLanguageChange("ar")}>
-              {" "}
-              {t("arab")}
-            </button>
-          </li>
-        </ul>
-      )}
     </>
   );
 };
