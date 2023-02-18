@@ -73,7 +73,7 @@ const Navbar = () => {
         </div>
 
         <hr
-          className={`text-primary-tints-100 relative  ${
+          className={`dark:text-primary-tones-400 text-primary-tints-100 relative  ${
             isActive ? "block" : "hidden"
           } `}
         />
@@ -111,13 +111,13 @@ const Navbar = () => {
 
         {/* burger */}
         <div
-          className="absolute top-4 right-12 lg:hidden"
+          className="absolute top-4 right-5 lg:hidden "
           onClick={() => setIsActive(!isActive)}
         >
           {isActive ? (
-            <IoClose className="w-10 h-10" />
+            <IoClose className="w-10 h-10 dark:text-primary-tints-300" />
           ) : (
-            <IoMenuSharp className="w-10 h-10" />
+            <IoMenuSharp className="w-10 h-10 dark:text-primary-tints-300" />
           )}
         </div>
       </nav>

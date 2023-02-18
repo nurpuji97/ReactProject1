@@ -6,7 +6,9 @@ function App() {
   const isDarkMode = useSelector((state) => state.dark.isDarkMode);
 
   return (
-    <div className={isDarkMode ? "dark" : "light"}>
+    <div
+      className={`${isDarkMode ? "dark" : "light"} dark:bg-primary-shades-500 `}
+    >
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />

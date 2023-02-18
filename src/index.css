@@ -5,7 +5,7 @@
 @layer components {
   /* navbar */
   .navbar {
-    @apply fixed left-0 right-0 top-0 py-5 px-20 flex justify-between bg-primary-tints-500 es:max-lg:flex-col es:max-lg:px-10 shrink-0 shadow-md;
+    @apply fixed left-0 right-0 top-0 py-5 px-20 flex justify-between bg-primary-tints-500 es:max-lg:flex-col md:max-lg:px-10 es:max-md:px-5 shrink-0 shadow-md dark:bg-primary-shades-500 dark:border-b border-primary-tones-400;
   }
 
   .col-1 {
@@ -22,7 +22,7 @@
 
   .btn {
     @apply flex py-2 px-3 text-primary-shades-200 text-sm
-   hover:bg-primary-default hover:text-primary-shades-500 hover:rounded hover:font-medium es:max-lg:justify-center;
+   hover:bg-primary-default hover:text-primary-shades-500 hover:rounded hover:font-medium es:max-lg:justify-center dark:text-primary-tints-300 hover:dark:text-primary-shades-500;
   }
 
   .col-2 {
@@ -30,11 +30,11 @@
   }
 
   .dropdown-menu {
-    @apply absolute right-32 top-0 z-10 bg-white rounded-lg shadow-md py-4 px-1 border es:max-lg:absolute es:max-lg:z-0 es:max-lg:right-0 es:max-lg:left-0 es:max-lg:top-[230px] es:max-lg:rounded-none es:max-lg:border-none es:max-lg:bg-primary-tints-500 es:max-lg:px-10;
+    @apply absolute right-32 top-0 z-10 bg-white rounded-lg shadow-md py-4 px-1 border es:max-lg:absolute es:max-lg:z-0 es:max-lg:right-0 es:max-lg:left-0 es:max-lg:top-[250px] es:max-lg:rounded-none es:max-lg:border-none es:max-lg:bg-primary-tints-500 es:max-lg:px-10 dark:bg-primary-shades-400 dark:border-primary-tints-400 es:max-lg:dark:bg-primary-shades-500;
   }
 
   .dropdown-menu-list {
     @apply flex gap-2 px-4 py-2 hover:bg-primary-tints-400 hover:rounded es:max-lg:justify-center
-    es:max-lg:hover:bg-primary-default;
+    es:max-lg:hover:bg-primary-default dark:text-primary-tints-500 hover:dark:text-primary-shades-500 es:max-lg:dark:text-primary-tints-500;
   }
 }
