@@ -51,5 +51,8 @@ module.exports = {
       secondary: "#CEFC86",
     },
   },
-  plugins: [require("tw-elements/dist/plugin")],
+  plugins: [
+    require("tw-elements/dist/plugin"),
+    require("tailwind-scrollbar")({ nocompatible: true }),
+  ],
 };

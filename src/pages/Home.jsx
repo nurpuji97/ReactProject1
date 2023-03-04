@@ -1,12 +1,9 @@
 import React from "react";
-import { useSelector } from "react-redux";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import About from "../components/About";
 
 const Home = () => {
-  const isDarkMode = useSelector((state) => state.dark.isDarkMode);
-
   return (
     <div className="relative mt-[76px] dark:bg-primary-shades-500">
       <Navbar />
