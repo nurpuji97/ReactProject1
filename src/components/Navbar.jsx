@@ -81,7 +81,7 @@ const Navbar = () => {
         {/* column 2 */}
         <div className="col-2">
           {/* dropdown */}
-          <button
+          <div
             onClick={() => setIsOpen(!isOpen)}
             className={`btn es:max-lg:order-2  ${
               isActive ? "es:max-lg:flex" : "es:max-lg:hidden"
@@ -118,7 +118,7 @@ const Navbar = () => {
                 </li>
               </ul>
             )}
-          </button>
+          </div>
 
           {/* toggle */}
           <div

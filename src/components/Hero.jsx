@@ -15,7 +15,8 @@ const Hero = () => {
       <div className="heroRight">
         <p className="subTitleHero">{t("subTitleHero")}</p>
         <h1 className="titleHero">
-          {t("titleHero1")} & <br /> {t("titleHero2")}
+          <div className="mb-2">{t("titleHero1")} &</div>
+          <div>{t("titleHero2")}</div>
         </h1>
         <a className="buttonHero">{t("buttonHero")}</a>
 
