@@ -123,4 +123,21 @@
   .tab-content {
     @apply mt-[10px] overflow-y-scroll h-56 scroll-smooth es:max-lg:overscroll-contain scrollbar-thin scrollbar-thumb-primary-shades-300 scrollbar-track-primary-tones-200 scrollbar-thumb-rounded-full scrollbar-track-rounded-full;
   }
+
+  /* tab Education */
+  .group-education {
+    @apply mb-5;
+  }
+
+  .group-education-insitusi {
+    @apply text-base font-semibold text-primary-shades-400;
+  }
+
+  .group-education-tahun {
+    @apply text-xs font-thin text-primary-shades-300;
+  }
+
+  .group-education-kejuruan {
+    @apply text-sm font-light text-primary-shades-500;
+  }
 }
