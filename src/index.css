@@ -74,7 +74,7 @@
 
   .project p,
   .client p {
-    @apply text-[20px] font-bold text-primary-shades-500 es:max-lg:text-[20px] dark:text-primary-tints-500;
+    @apply text-[20px] font-bold text-primary-shades-500 es:max-lg:text-[18px] dark:text-primary-tints-500;
   }
 
   .project span,
@@ -88,7 +88,7 @@
   }
 
   .about-title {
-    @apply text-4xl font-bold mb-11;
+    @apply text-4xl font-bold mb-11 es:max-lg:text-3xl;
   }
 
   .about-content-profile {
@@ -143,7 +143,7 @@
 
   /* What I Do */
   .about-content-work-title {
-    @apply text-[28px] mb-[30px] font-semibold text-center text-primary-shades-500;
+    @apply text-[28px] mb-[30px] font-semibold text-center text-primary-shades-500 es:max-lg:text-[26px];
   }
 
   .about-content-work-group_card {
