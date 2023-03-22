@@ -92,16 +92,16 @@
   }
 
   .about-content-profile {
-    @apply flex gap-10 justify-center mb-[40px];
+    @apply flex gap-10 justify-center mb-[40px] es:max-lg:flex-col;
   }
 
   .about-content-profile img {
-    @apply w-1/4 ratio-1x1;
+    @apply w-1/4 ratio-1x1 es:max-lg:self-center;
   }
 
   /* tabs */
   .tabs {
-    @apply flex flex-col w-2/3;
+    @apply flex flex-col w-2/3 es:max-lg:w-[100%];
   }
 
   .tab-list {
@@ -147,10 +147,10 @@
   }
 
   .about-content-work-group_card {
-    @apply flex justify-around;
+    @apply flex justify-around es:max-lg:flex-col es:max-lg:gap-6;
   }
 
   .about-content-work-group_card-card {
-    @apply w-80 text-center border border-primary-tints-300 py-5 px-5;
+    @apply w-80 text-center border border-primary-tints-300 py-5 px-5 es:max-lg:self-center;
   }
 }
