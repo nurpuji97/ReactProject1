@@ -5,33 +5,27 @@ import IconWeb from "../images/Icon_Webdesain.svg";
 import IconFront from "../images/Icon_Frontend.svg";
 import IconBack from "../images/Icon_Backend.svg";
 
-// import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
-  // const { t } = useTranslation();
+  const { t } = useTranslation();
   return (
     <div className="about">
-      <h1 className="about-title">About Me</h1>
+      <h1 className="about-title">{t("tentang")}</h1>
       <div className="about-content">
         <div className="about-content-profile">
           <img src={Image} alt="about-content-profile-imageProfile" />
           {/* Tabs */}
           <Tabs>
-            <div label="About">
+            <div label={t("tentang")}>
               <p className="indent-3 mb-2 text-primary-shades-500 dark:text-primary-tints-400">
-                Nur Puji adalah seorang desainer dan developer pemula yang lulus
-                dari Universitas Bhayangkara Jaya pada tahun 2020. Dia memiliki
-                kemampuan dalam merancang dan membuat website yang berkualitas,
-                serta pengetahuan yang solid di bidang teknologi informasi.
+                {t("DescAbout1")}
               </p>
               <p className="indent-3 mb-2 text-primary-shades-500 dark:text-primary-tints-400">
-                Meskipun baru memulai kariernya, dia membawa energi dan
-                antusiasme yang tinggi untuk memulai kariernya di industri ini
-                dan selalu siap untuk belajar dan mengembangkan kemampuannya
-                lebih lanjut.
+                {t("DescAbout2")}
               </p>
             </div>
-            <div label="Education">
+            <div label={t("pendidikan")}>
               <div className="group-education">
                 <p className="group-education-insitusi">
                   Universitas Bhayangkara Jaya
@@ -63,7 +57,7 @@ const About = () => {
           </Tabs>
         </div>
         <div className="about-content-work">
-          <p className="about-content-work-title">What I Do</p>
+          <p className="about-content-work-title">{t("WhatIdo")}</p>
           <div className="about-content-work-group_card">
             {/* card */}
             <div className="about-content-work-group_card-card">
@@ -73,11 +67,10 @@ const About = () => {
                 alt="icon-card"
               />
               <p className="mb-2.5 text-[21px] font-medium dark:text-primary-tints-300">
-                Web Desain{" "}
+                {t("webDesain")}{" "}
               </p>
               <p className="text-primary-shades-400 text-sm dark:text-primary-tints-500">
-                membuat website yang atraktif, efisien, responsif dan
-                mobile-friendly untuk meningkatkan pengalaman pengguna.
+                {t("webDesainDesc")}
               </p>
             </div>
 
@@ -92,8 +85,7 @@ const About = () => {
                 Frond End{" "}
               </p>
               <p className="text-primary-shades-400 text-sm dark:text-primary-tints-500">
-                Pengetahuan tentang HTML, CSS, dan JavaScript. dapat
-                mengaplikasikan prinsip-prinsip desain responsif
+                {t("frontEndnDesc")}
               </p>
             </div>
 
@@ -108,8 +100,7 @@ const About = () => {
                 Back End{" "}
               </p>
               <p className="text-primary-shades-400 text-sm dark:text-primary-tints-500">
-                Memahami bahasa pemrograman PHP dan MySQL , mengkonfigurasi
-                server serta mengelola basis data
+                {t("backEndDesc")}
               </p>
             </div>
           </div>

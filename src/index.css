@@ -153,4 +153,6 @@
   .about-content-work-group_card-card {
     @apply w-80 text-center border rounded border-primary-tints-300 py-7 px-6 es:max-lg:self-center;
   }
+
+  /* Portofolio */
 }
