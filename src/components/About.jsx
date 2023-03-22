@@ -1,8 +1,13 @@
 import React from "react";
 import Tabs from "../elements/tabs/Tabs";
 import Image from "../images/image.jpg";
+import IconWeb from "../images/Icon_Webdesain.svg";
+import IconFront from "../images/Icon_Frontend.svg";
+import IconBack from "../images/Icon_Backend.svg";
+// import { useTranslation } from "react-i18next";
 
 const About = () => {
+  // const { t } = useTranslation();
   return (
     <div className="about">
       <h1 className="about-title">About Me</h1>
@@ -57,7 +62,50 @@ const About = () => {
           </Tabs>
         </div>
         <div className="about-content-work">
-          <p>What I Do</p>
+          <p className="about-content-work-title">What I Do</p>
+          <div className="about-content-work-group_card">
+            {/* card */}
+            <div className="about-content-work-group_card-card">
+              <img
+                className="w-[64px] mb-[30px] text-center mx-auto"
+                src={IconWeb}
+                alt="icon-card"
+              />
+              <p className="mb-2.5 text-[21px] font-medium">Web Desain </p>
+              <p className="text-primary-shades-400 text-sm">
+                membuat website yang atraktif, efisien, responsif dan
+                mobile-friendly untuk meningkatkan pengalaman pengguna.
+              </p>
+            </div>
+
+            {/* card */}
+            <div className="about-content-work-group_card-card">
+              <img
+                className="w-[64px] mb-[30px] text-center mx-auto"
+                src={IconFront}
+                alt="icon-card"
+              />
+              <p className="mb-2.5 text-[21px] font-medium">Frond End </p>
+              <p className="text-primary-shades-400 text-sm">
+                Pengetahuan tentang HTML, CSS, dan JavaScript. dapat
+                mengaplikasikan prinsip-prinsip desain responsif
+              </p>
+            </div>
+
+            {/* card */}
+            <div className="about-content-work-group_card-card">
+              <img
+                className="w-[64px] mb-[30px] text-center mx-auto"
+                src={IconBack}
+                alt="icon-card"
+              />
+              <p className="mb-2.5 text-[21px] font-medium">Back End </p>
+              <p className="text-primary-shades-400 text-sm">
+                Memahami bahasa pemrograman PHP dan MySQL , mengkonfigurasi
+                server serta mengelola basis data
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

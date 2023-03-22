@@ -140,4 +140,17 @@
   .group-education-kejuruan {
     @apply text-sm font-light text-primary-shades-500;
   }
+
+  /* What I Do */
+  .about-content-work-title {
+    @apply text-[28px] mb-[30px] font-semibold text-center text-primary-shades-500;
+  }
+
+  .about-content-work-group_card {
+    @apply flex justify-around;
+  }
+
+  .about-content-work-group_card-card {
+    @apply w-80 text-center border border-primary-tints-300 py-5 px-5;
+  }
 }
