@@ -88,7 +88,7 @@
   }
 
   .about-title {
-    @apply text-4xl font-bold mb-11 es:max-lg:text-3xl;
+    @apply text-4xl text-primary-shades-400 font-bold mb-11 es:max-lg:text-3xl dark:text-primary-tints-400;
   }
 
   .about-content-profile {
@@ -109,11 +109,11 @@
   }
 
   .tab-list-item {
-    @apply list-none mr-[10px] text-primary-tones-500;
+    @apply list-none mr-[10px] text-primary-tones-500 dark:text-primary-tints-500;
   }
 
   .tab-list-item.active {
-    @apply border-b-2 border-primary-tones-200 text-primary-shades-500;
+    @apply border-b-2 border-primary-tones-200 text-primary-shades-500 dark:text-primary-tints-200;
   }
 
   .tab-button {
@@ -130,20 +130,20 @@
   }
 
   .group-education-insitusi {
-    @apply text-base font-semibold text-primary-shades-400;
+    @apply text-base font-semibold text-primary-shades-400 dark:text-primary-tints-200;
   }
 
   .group-education-tahun {
-    @apply text-xs font-thin text-primary-shades-300;
+    @apply text-xs font-thin text-primary-shades-300 dark:text-primary-tints-400;
   }
 
   .group-education-kejuruan {
-    @apply text-sm font-light text-primary-shades-500;
+    @apply text-sm font-light text-primary-shades-500 dark:text-primary-tints-500;
   }
 
   /* What I Do */
   .about-content-work-title {
-    @apply text-[28px] mb-[30px] font-semibold text-center text-primary-shades-500 es:max-lg:text-[26px];
+    @apply text-[28px] mb-[30px] font-semibold text-center text-primary-shades-500 es:max-lg:text-[26px] dark:text-primary-tints-300;
   }
 
   .about-content-work-group_card {
@@ -151,6 +151,6 @@
   }
 
   .about-content-work-group_card-card {
-    @apply w-80 text-center border border-primary-tints-300 py-5 px-5 es:max-lg:self-center;
+    @apply w-80 text-center border rounded border-primary-tints-300 py-7 px-6 es:max-lg:self-center;
   }
 }

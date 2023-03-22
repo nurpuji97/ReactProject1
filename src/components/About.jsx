@@ -4,6 +4,7 @@ import Image from "../images/image.jpg";
 import IconWeb from "../images/Icon_Webdesain.svg";
 import IconFront from "../images/Icon_Frontend.svg";
 import IconBack from "../images/Icon_Backend.svg";
+
 // import { useTranslation } from "react-i18next";
 
 const About = () => {
@@ -17,13 +18,13 @@ const About = () => {
           {/* Tabs */}
           <Tabs>
             <div label="About">
-              <p className="indent-3 mb-2 text-primary-shades-300">
+              <p className="indent-3 mb-2 text-primary-shades-500 dark:text-primary-tints-400">
                 Nur Puji adalah seorang desainer dan developer pemula yang lulus
                 dari Universitas Bhayangkara Jaya pada tahun 2020. Dia memiliki
                 kemampuan dalam merancang dan membuat website yang berkualitas,
                 serta pengetahuan yang solid di bidang teknologi informasi.
               </p>
-              <p className="indent-3 mb-2 text-primary-shades-300">
+              <p className="indent-3 mb-2 text-primary-shades-500 dark:text-primary-tints-400">
                 Meskipun baru memulai kariernya, dia membawa energi dan
                 antusiasme yang tinggi untuk memulai kariernya di industri ini
                 dan selalu siap untuk belajar dan mengembangkan kemampuannya
@@ -67,12 +68,14 @@ const About = () => {
             {/* card */}
             <div className="about-content-work-group_card-card">
               <img
-                className="w-[64px] mb-[30px] text-center mx-auto"
+                className="w-[42px] mb-[30px] text-center mx-auto"
                 src={IconWeb}
                 alt="icon-card"
               />
-              <p className="mb-2.5 text-[21px] font-medium">Web Desain </p>
-              <p className="text-primary-shades-400 text-sm">
+              <p className="mb-2.5 text-[21px] font-medium dark:text-primary-tints-300">
+                Web Desain{" "}
+              </p>
+              <p className="text-primary-shades-400 text-sm dark:text-primary-tints-500">
                 membuat website yang atraktif, efisien, responsif dan
                 mobile-friendly untuk meningkatkan pengalaman pengguna.
               </p>
@@ -85,8 +88,10 @@ const About = () => {
                 src={IconFront}
                 alt="icon-card"
               />
-              <p className="mb-2.5 text-[21px] font-medium">Frond End </p>
-              <p className="text-primary-shades-400 text-sm">
+              <p className="mb-2.5 text-[21px] font-medium dark:text-primary-tints-300">
+                Frond End{" "}
+              </p>
+              <p className="text-primary-shades-400 text-sm dark:text-primary-tints-500">
                 Pengetahuan tentang HTML, CSS, dan JavaScript. dapat
                 mengaplikasikan prinsip-prinsip desain responsif
               </p>
@@ -95,12 +100,14 @@ const About = () => {
             {/* card */}
             <div className="about-content-work-group_card-card">
               <img
-                className="w-[64px] mb-[30px] text-center mx-auto"
+                className="w-[60px] mb-[30px] text-center mx-auto"
                 src={IconBack}
                 alt="icon-card"
               />
-              <p className="mb-2.5 text-[21px] font-medium">Back End </p>
-              <p className="text-primary-shades-400 text-sm">
+              <p className="mb-2.5 text-[21px] font-medium dark:text-primary-tints-300">
+                Back End{" "}
+              </p>
+              <p className="text-primary-shades-400 text-sm dark:text-primary-tints-500">
                 Memahami bahasa pemrograman PHP dan MySQL , mengkonfigurasi
                 server serta mengelola basis data
               </p>
