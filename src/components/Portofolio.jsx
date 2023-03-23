@@ -6,7 +6,8 @@ import Image3 from "../images/image_portofolio-3.jpg";
 
 const Portofolio = () => {
   return (
-    <div className="portofolio">
+    <div className="portofolio" id="portofolio">
+      <div className="mb-8"></div>
       <p className="portofolio-title">Portofolio</p>
       <p className="portofolio-subtitle">Ini adalah karya terbaik aku</p>
       <div className="portofolio-container">

@@ -50,19 +50,19 @@ const Navbar = () => {
             }`}
           >
             <li>
-              <NavLink className="btn" to="">
+              <a href="/" className="btn">
                 {t("home")}
-              </NavLink>{" "}
+              </a>{" "}
             </li>
             <li>
-              <NavLink className="btn" to="">
+              <a href="#about" className="btn">
                 {t("tentang")}
-              </NavLink>
+              </a>
             </li>
             <li>
-              <NavLink className="btn" to="">
+              <a href="#portofolio" className="btn">
                 {t("portofolio")}
-              </NavLink>
+              </a>
             </li>
             <li>
               <NavLink className="btn" to="">

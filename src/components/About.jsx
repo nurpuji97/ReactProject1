@@ -10,7 +10,8 @@ import { useTranslation } from "react-i18next";
 const About = () => {
   const { t } = useTranslation();
   return (
-    <div className="about">
+    <div className="about" id="about">
+      <div className="mb-8"></div>
       <h1 className="about-title">{t("tentang")}</h1>
       <div className="about-content">
         <div className="about-content-profile">

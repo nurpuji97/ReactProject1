@@ -18,7 +18,7 @@ const Hero = () => {
           <div className="mb-2">{t("titleHero1")} &</div>
           <div>{t("titleHero2")}</div>
         </h1>
-        <a className="buttonHero">{t("buttonHero")}</a>
+        <div className="buttonHero">{t("buttonHero")}</div>
 
         <div className="projectCount">
           <div className="project">
