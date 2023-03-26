@@ -117,7 +117,7 @@
   }
 
   .tab-button {
-    @apply py-[5px] px-[7px] font-medium border-none cursor-pointer font-normal;
+    @apply py-[5px] px-[7px] font-medium border-none cursor-pointer;
   }
 
   .tab-content {
@@ -156,7 +156,7 @@
 
   /* Portofolio */
   .portofolio {
-    @apply py-14 px-20;
+    @apply py-14 px-20 es:max-lg:py-3 es:max-lg:px-10;
   }
 
   .portofolio-title {
@@ -173,7 +173,7 @@
   }
 
   .portofolio-container-card {
-    @apply relative bg-primary-tints-100 rounded w-full h-full mb-10 dark:border border-primary-tones-500;
+    @apply relative bg-primary-tints-100 rounded w-full h-full mb-10 dark:border border-primary-tones-500 es:max-lg:relative;
   }
 
   .portofolio-container-card-image {
@@ -181,19 +181,19 @@
   }
 
   .portofolio-container-card-desc {
-    @apply absolute font-sans py-10 px-[120px] bottom-0 right-0 left-0 bg-gradient-to-r from-primary-shades-500;
+    @apply absolute font-sans py-10 px-[120px] bottom-0 right-0 left-0 bg-gradient-to-r from-primary-shades-500  es:max-lg:px-[40px] es:max-md:py-5;
   }
 
   .portofolio-container-card-desc-title {
-    @apply text-primary-tints-500 font-semibold text-2xl mb-[10px];
+    @apply text-primary-tints-500 font-semibold text-2xl mb-[10px] es:max-md:text-base;
   }
 
   .portofolio-container-card-desc-Subtitle {
-    @apply text-primary-tints-500 mb-[30px] text-xs w-3/5;
+    @apply text-primary-tints-500 mb-[30px] text-xs w-3/5 es:max-md:hidden;
   }
 
   .portofolio-container-card-desc-link {
-    @apply text-primary-tints-200 text-sm hover:underline;
+    @apply text-primary-tints-200 text-sm hover:underline es:max-md:text-[10px];
   }
 
   .portofolio-continue {

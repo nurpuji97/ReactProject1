@@ -79,6 +79,9 @@ const Portofolio = () => {
           Lihat Project Lainnya........
         </Link>
       </div>
+
+      {/* Testimoni */}
+      <div className="testimoni"></div>
     </div>
   );
 };
