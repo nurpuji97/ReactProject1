@@ -81,7 +81,21 @@ const Portofolio = () => {
       </div>
 
       {/* Testimoni */}
-      <div className="testimoni"></div>
+      <div className="testimoni">
+        <p className="testimoni-title">Testimoni</p>
+        <div className="testimoni-container-card">
+          {/* card */}
+          <div className="testimoni-card">
+            <img src="" alt="image-testimoni" />
+            <div className="testimoni-container-desc">
+              <p className="testimoni-title"></p>
+              <p className="testimoni-subtitle"></p>
+              <div className="testimoni-rating"></div>
+              <p className="testimoni-desc"></p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

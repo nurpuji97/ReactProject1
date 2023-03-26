@@ -169,7 +169,7 @@
 
   /* card portofolio */
   .portofolio-container {
-    @apply flex flex-col;
+    @apply flex flex-col mb-[40px];
   }
 
   .portofolio-container-card {
@@ -198,5 +198,11 @@
 
   .portofolio-continue {
     @apply text-primary-shades-500 text-xs hover:underline hover:text-primary-shades-200 text-right dark:text-primary-tints-300;
+  }
+
+  /* testimoni */
+
+  .testimoni-title {
+    @apply font-sans text-[28px] mb-[30px] font-semibold text-center text-primary-shades-500 es:max-lg:text-[26px] dark:text-primary-tints-300;
   }
 }
