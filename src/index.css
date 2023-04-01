@@ -205,4 +205,32 @@
   .testimoni-title {
     @apply font-sans text-[28px] mb-[30px] font-semibold text-center text-primary-shades-500 es:max-lg:text-[26px] dark:text-primary-tints-300;
   }
+
+  .testimoni-container-card {
+    @apply flex;
+  }
+
+  .testimoni-card {
+    @apply flex gap-6;
+  }
+
+  .testimoni-image {
+    @apply w-[310px] h-[310px] rounded object-cover;
+  }
+
+  .testimoni-container-desc {
+    @apply self-center;
+  }
+
+  .testimoni-title-desc {
+    @apply text-primary-shades-500 font-semibold text-[21px] mb-[5px];
+  }
+
+  .testimoni-subtitle-desc {
+    @apply text-base font-normal mb-[25px];
+  }
+
+  .testimoni-desc {
+    @apply text-primary-shades-400 font-light text-base;
+  }
 }

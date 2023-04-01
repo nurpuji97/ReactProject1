@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import Image1 from "../images/image_portofolio-1.jpg";
 import Image2 from "../images/image_portofolio-2.jpg";
 import Image3 from "../images/image_portofolio-3.jpg";
+import imgTesti from "../images/Image2.jpg";
+import Star from "../elements/Star";
 
 const Portofolio = () => {
   return (
@@ -83,15 +85,32 @@ const Portofolio = () => {
       {/* Testimoni */}
       <div className="testimoni">
         <p className="testimoni-title">Testimoni</p>
+
         <div className="testimoni-container-card">
           {/* card */}
           <div className="testimoni-card">
-            <img src="" alt="image-testimoni" />
+            <img
+              src={imgTesti}
+              className="testimoni-image"
+              alt="testimoni-gambar"
+            />
             <div className="testimoni-container-desc">
-              <p className="testimoni-title"></p>
-              <p className="testimoni-subtitle"></p>
-              <div className="testimoni-rating"></div>
-              <p className="testimoni-desc"></p>
+              <p className="testimoni-title-desc">Asmuni Siharahap</p>
+              <p className="testimoni-subtitle-desc">Manager</p>
+              <Star
+                className="mb-[40px]"
+                value={4}
+                width={35}
+                height={35}
+                spacing={4}
+              />
+              <p className="testimoni-desc">
+                Website Nurpuji memberikan layanan yang sangat baik dan
+                profesional. Saya sangat puas dengan hasil yang diberikan oleh
+                website Nurpuji. Sangat merekomendasikan website ini kepada
+                siapapun yang membutuhkan layanan pembuatan website dengan
+                kualitas terbaik. Terima kasih Nurpuji!
+              </p>
             </div>
           </div>
         </div>
