@@ -65,9 +65,9 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <NavLink className="btn" to="">
+              <a className="btn" href="#Contact">
                 {t("kontak")}
-              </NavLink>
+              </a>
             </li>
           </ul>
         </div>
