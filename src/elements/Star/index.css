@@ -4,7 +4,7 @@
 
 @layer components {
   .stars {
-    @apply relative min-w-[200px] inline-flex;
+    @apply relative min-w-[200px] inline-flex es:max-lg:ml-20;
   }
 
   .stars .star {
@@ -12,11 +12,11 @@
   }
 
   .stars .star:not(.placeholder) {
-    @apply z-[2] bg-primary-shades-500;
+    @apply z-[2] bg-primary-shades-500 dark:bg-primary-shades-100;
   }
 
   .stars .star.placeholder {
-    @apply z-[1] bg-primary-tints-100;
+    @apply z-[1] bg-primary-tints-100 dark:bg-primary-shades-300;
   }
 }
 

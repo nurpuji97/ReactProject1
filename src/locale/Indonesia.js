@@ -27,5 +27,8 @@ export default {
       "Pengetahuan tentang HTML, CSS, dan JavaScript. dapat mengaplikasikan prinsip-prinsip desain responsif",
     backEndDesc:
       "Memahami bahasa pemrograman PHP dan MySQL , mengkonfigurasi server serta mengelola basis data",
+    subTitlePorto: "Ini adalah karya terbaik aku",
+    linkPorto: "Lihat Project Lainnya........",
+    testiPorto: "Testimoni",
   },
 };

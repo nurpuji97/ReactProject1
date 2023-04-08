@@ -207,15 +207,15 @@
   }
 
   .testimoni-container-card {
-    @apply flex;
+    @apply flex flex-row h-[370px] es:max-lg:h-full;
   }
 
   .testimoni-card {
-    @apply flex gap-6;
+    @apply flex gap-6 es:max-lg:flex-col es:max-lg:text-center;
   }
 
   .testimoni-image {
-    @apply w-[310px] h-[310px] rounded object-cover;
+    @apply w-[310px] h-[310px] rounded object-cover es:max-lg:self-center es:max-lg:w-1/2 es:max-lg:h-auto;
   }
 
   .testimoni-container-desc {
@@ -223,14 +223,14 @@
   }
 
   .testimoni-title-desc {
-    @apply text-primary-shades-500 font-semibold text-[21px] mb-[5px];
+    @apply text-primary-shades-500 font-semibold text-[21px] mb-[5px] dark:text-primary-tints-400 mb-[2px];
   }
 
   .testimoni-subtitle-desc {
-    @apply text-base font-normal mb-[25px];
+    @apply text-base font-normal mb-[20px] dark:text-primary-tints-400 es:max-lg:mb-[15px];
   }
 
   .testimoni-desc {
-    @apply text-primary-shades-400 font-light text-base;
+    @apply text-primary-shades-400 font-light text-base dark:text-primary-tints-500;
   }
 }

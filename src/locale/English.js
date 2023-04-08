@@ -27,5 +27,8 @@ export default {
       "Knowledge of HTML, CSS and JavaScript. can apply responsive design principles",
     backEndDesc:
       "Understand PHP and MySQL programming languages, configure servers and manage databases",
+    subTitlePorto: "This is my best work",
+    linkPorto: "See More Projects........",
+    testiPorto: "Testimonials",
   },
 };
