@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
 import Image from "../images/Logo.png";
 import IndonesiaFlag from "../images/indonesia.png";
 import EnglishFlag from "../images/united-kingdom.png";

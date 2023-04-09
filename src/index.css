@@ -233,4 +233,57 @@
   .testimoni-desc {
     @apply text-primary-shades-400 font-light text-base dark:text-primary-tints-500;
   }
+
+  /* Contact Me */
+  .contact {
+    @apply py-14 px-20 es:max-lg:py-3 es:max-lg:px-10;
+  }
+
+  .contact-title {
+    @apply text-4xl text-primary-shades-400 font-bold mb-[40px] es:max-lg:text-3xl dark:text-primary-tints-400;
+  }
+
+  .contact-subTitle {
+    @apply text-base text-primary-shades-400 capitalize mb-[10px] es:max-lg:text-sm dark:text-primary-tints-400;
+  }
+
+  .contact-container {
+    @apply flex w-full justify-between content-center;
+  }
+
+  .contact-container-form {
+    @apply w-3/4 px-4;
+  }
+
+  .group-input {
+    @apply mb-[30px] flex flex-col;
+  }
+
+  .group-input-label {
+    @apply mb-[10px] text-primary-shades-500 font-semibold dark:text-primary-tints-500;
+  }
+
+  .group-input-text {
+    @apply text-base rounded py-1.5 pl-3
+    border border-primary-tones-400 placeholder-primary-shades-100
+    text-primary-shades-400 
+    font-light 
+    focus:border-primary-shades-200
+    focus:outline-none 
+    dark:border-primary-tones-100
+    dark:bg-primary-tints-500
+    dark:placeholder-primary-shades-100
+    dark:focus:border-primary-tints-200
+    dark:focus:outline-none;
+  }
+
+  .btn-submit {
+    @apply flex flex-row gap-2 border border-primary-default bg-primary-shades-100 rounded py-2 px-10 text-primary-shades-500 hover:bg-primary-tints-100
+    hover:text-primary-shades-500 hover:outline-none
+    dark:text-primary-shades-500 dark:hover:text-primary-shades-300 focus:outline-none;
+  }
+
+  .contact-container-ilustration {
+    @apply w-2/3 self-center justify-self-end;
+  }
 }
