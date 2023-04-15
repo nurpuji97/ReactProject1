@@ -30,5 +30,13 @@ export default {
     subTitlePorto: "Ini adalah karya terbaik aku",
     linkPorto: "Lihat Project Lainnya........",
     testiPorto: "Testimoni",
+    desContact1:
+      "agar Anda dapat tetap terhubung dan mendapatkan informasi terbaru dari kami. Jangan ragu untuk menghubungi kami jika Anda memiliki pertanyaan, saran, atau masukan. Kami akan selalu siap untuk membantu Anda.",
+    desContact2: "Anda dapat mengisi form formulir yang tersedia dibawah ini :",
+    nama: "Nama",
+    email: "Email",
+    tlp: "Nomor Telepon",
+    komentar: "Komentar",
+    kirim: "Kirim",
   },
 };

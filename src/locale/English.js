@@ -30,5 +30,13 @@ export default {
     subTitlePorto: "This is my best work",
     linkPorto: "See More Projects........",
     testiPorto: "Testimonials",
+    desContact1:
+      "so you can stay connected and get the latest information from us. Feel free to contact us if you have any questions, suggestions or feedback. We will always be ready to help you.",
+    desContact2: "You can fill out the form provided below:",
+    nama: "Name",
+    email: "Email",
+    tlp: "Phone Number",
+    komentar: "Comment",
+    kirim: "Send",
   },
 };

@@ -223,7 +223,7 @@
   }
 
   .testimoni-title-desc {
-    @apply text-primary-shades-500 font-semibold text-[21px] mb-[5px] dark:text-primary-tints-400 mb-[2px];
+    @apply text-primary-shades-500 font-semibold text-[21px]  dark:text-primary-tints-400 mb-[2px];
   }
 
   .testimoni-subtitle-desc {
@@ -248,11 +248,11 @@
   }
 
   .contact-container {
-    @apply flex w-full justify-between content-center;
+    @apply flex w-full justify-between content-center es:max-lg:flex-col;
   }
 
   .contact-container-form {
-    @apply w-3/4 px-4;
+    @apply w-3/4 px-4 es:max-lg:w-full;
   }
 
   .group-input {
@@ -280,10 +280,10 @@
   .btn-submit {
     @apply flex flex-row gap-2 border border-primary-default bg-primary-shades-100 rounded py-2 px-10 text-primary-shades-500 hover:bg-primary-tints-100
     hover:text-primary-shades-500 hover:outline-none
-    dark:text-primary-shades-500 dark:hover:text-primary-shades-300 focus:outline-none;
+    dark:text-primary-shades-500 dark:hover:text-primary-shades-300 focus:outline-none es:max-md:w-full es:max-lg:justify-center;
   }
 
   .contact-container-ilustration {
-    @apply w-2/3 self-center justify-self-end;
+    @apply w-2/3 self-center justify-self-end es:max-lg:hidden;
   }
 }

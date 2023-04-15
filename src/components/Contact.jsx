@@ -2,46 +2,59 @@ import React from "react";
 import Ilustra2 from "../images/ilustrasi2.svg";
 import PlaneIcon from "../images/Icon_plane.svg";
 
+import { useTranslation } from "react-i18next";
+
 const Contact = () => {
+  const { t } = useTranslation();
   return (
     <div id="Contact" className="contact">
       <div className="mb-8"></div>
-      <div className="contact-title">Contact Me</div>
-      <div className="contact-subTitle">
-        agar Anda dapat tetap terhubung dan mendapatkan informasi terbaru dari
-        kami. Jangan ragu untuk menghubungi kami jika Anda memiliki pertanyaan,
-        saran, atau masukan. Kami akan selalu siap untuk membantu Anda.
-      </div>
-      <div className="contact-subTitle mb-[35px]">
-        Anda dapat mengisi form formulir yang tersedia dibawah ini :
-      </div>
+      <div className="contact-title">{t("kontak")}</div>
+      <div className="contact-subTitle">{t("desContact1")}.</div>
+      <div className="contact-subTitle mb-[35px]">{t("desContact2")}</div>
       <div className="contact-container">
         <div className="contact-container-form">
           <form>
             <div className="group-input">
-              <label className="group-input-label">Name</label>
-              <input type="text" className="group-input-text" name="name" />
+              <label className="group-input-label">{t("nama")}</label>
+              <input
+                type="text"
+                className="group-input-text"
+                name="name"
+                placeholder="John"
+              />
             </div>
             <div className="group-input">
-              <label className="group-input-label">Email</label>
-              <input type="text" className="group-input-text" name="email" />
+              <label className="group-input-label">{t("email")}</label>
+              <input
+                type="text"
+                className="group-input-text"
+                name="email"
+                placeholder="thisis@Email.com.id"
+              />
             </div>
             <div className="group-input">
-              <label className="group-input-label">No Telp</label>
-              <input type="text" className="group-input-text" name="telp" />
+              <label className="group-input-label">{t("tlp")}</label>
+              <input
+                type="text"
+                className="group-input-text"
+                name="telp"
+                placeholder="02972341234"
+              />
             </div>
             <div className="group-input">
-              <label className="group-input-label">Komentar</label>
+              <label className="group-input-label">{t("komentar")}</label>
               <textarea
                 name="komentar"
                 className="group-input-text"
                 cols="30"
                 rows="10"
+                placeholder="this is comment"
               ></textarea>
             </div>
             <button type="submit" className="btn-submit bg-primary-default">
               <img src={PlaneIcon} className="self-center" alt="plane_icon" />
-              <p>Kirim</p>
+              <p>{t("kirim")}</p>
             </button>
           </form>
         </div>
