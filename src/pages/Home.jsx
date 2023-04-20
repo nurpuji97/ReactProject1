@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import About from "../components/About";
 import Portofolio from "../components/Portofolio";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -13,10 +14,7 @@ const Home = () => {
       <About />
       <Portofolio />
       <Contact />
-      <h1 className="text-primary-shades-300 dark:text-primary-light">
-        hello World
-      </h1>
-      <button className="btn-primary">asd</button>
+      <Footer />
     </div>
   );
 };

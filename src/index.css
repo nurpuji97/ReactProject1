@@ -286,4 +286,37 @@
   .contact-container-ilustration {
     @apply w-2/3 self-center justify-self-end es:max-lg:hidden;
   }
+
+  /* footer */
+  .footer {
+    @apply py-14 px-20;
+  }
+
+  .footer-container {
+    @apply flex justify-between;
+  }
+
+  .sosmed-footer {
+    @apply flex gap-2;
+  }
+
+  .sosmed-footer img {
+    @apply hover:w-[20px] dark:bg-primary-tints-500;
+  }
+
+  .privasi-footer {
+    @apply flex gap-4 text-primary-shades-500 dark:text-primary-tints-500 text-sm pb-3;
+  }
+
+  .link-privasi {
+    @apply hover:text-primary-tones-300;
+  }
+
+  .garis-footer {
+    @apply text-primary-tints-400;
+  }
+
+  .copyright {
+    @apply py-[15px] font-light text-primary-shades-500 dark:text-primary-tints-500 text-center text-xs;
+  }
 }
