@@ -1,0 +1,59 @@
+{
+  "Hero": {
+    "project": 100,
+    "client": 60
+  },
+  "Pendidikan": [
+    {
+      "id": 1,
+      "Name": "Universitas Bhayangkara Jaya",
+      "DateStart": "16 September 2015",
+      "DateEnd": "16 September 2020",
+      "Jurusan": "Teknik Informatika"
+    },
+    {
+      "id": 2,
+      "Name": "BPPTIK Bekasi",
+      "DateStart": "05 Agustus 2019",
+      "DateEnd": "09 Agustus 2019",
+      "Jurusan": "Junior Web Programmer"
+    },
+    {
+      "id": 3,
+      "Name": "BBPLK Bekasi",
+      "DateStart": "18 Februari 2019",
+      "DateEnd": "01 Juli 2019",
+      "Jurusan": "IT Software For Bussines"
+    },
+    {
+      "id": 4,
+      "Name": "BBPVP Bekasi",
+      "DateStart": "09 Februari 2023",
+      "DateEnd": "18 April 2023",
+      "Jurusan": "Pemograman Embeded System Berbasis IOT"
+    }
+  ],
+  "Work": [
+    {
+      "id": "asd113asdsahd",
+      "Icon": "http://localhost:3000/static/media/Icon_Webdesain.9db096fb5c9ad801b93671d92cbfcd0f.svg",
+      "Name": "Desain Aplikasi",
+      "Desc": "mendesain aplikasi atraktif, efisien, responsif dan mobile-friendly untuk meningkatkan pengalaman pengguna.",
+      "Lang": "id"
+    },
+    {
+      "id": "asd114asdsahd",
+      "Icon": "http://localhost:3000/static/media/Icon_Webdesain.9db096fb5c9ad801b93671d92cbfcd0f.svg",
+      "Name": "Application Desain",
+      "Desc": "designing attractive, efficient, responsive and mobile-friendly applications to improve user experience.",
+      "Lang": "en"
+    },
+    {
+      "id": "asd115asdsahd",
+      "Icon": "http://localhost:3000/static/media/Icon_Webdesain.9db096fb5c9ad801b93671d92cbfcd0f.svg",
+      "Name": "تصميم التطبيق",
+      "Desc": "تصميم تطبيقات جذابة وفعالة وسريعة الاستجابة ومناسبة للجوّال لتحسين تجربة المستخدم.",
+      "Lang": "ar"
+    }
+  ]
+}
