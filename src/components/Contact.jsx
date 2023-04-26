@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Ilustra2 from "../images/ilustrasi2.svg";
 import PlaneIcon from "../images/Icon_plane.svg";
 
@@ -6,6 +6,17 @@ import { useTranslation } from "react-i18next";
 
 const Contact = () => {
   const { t } = useTranslation();
+  const [FormData, setFormData] = useState({
+    name: "",
+    email: "",
+    telp: "",
+    komentar: "",
+  });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(FormData);
+  };
   return (
     <div id="Contact" className="contact">
       <div className="mb-8"></div>
@@ -14,13 +25,17 @@ const Contact = () => {
       <div className="contact-subTitle mb-[35px]">{t("desContact2")}</div>
       <div className="contact-container">
         <div className="contact-container-form">
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="group-input">
               <label className="group-input-label">{t("nama")}</label>
               <input
                 type="text"
                 className="group-input-text"
                 name="name"
+                value={FormData.name}
+                onChange={(e) =>
+                  setFormData({ ...FormData, name: e.target.value })
+                }
                 placeholder="John"
               />
             </div>
@@ -30,6 +45,10 @@ const Contact = () => {
                 type="text"
                 className="group-input-text"
                 name="email"
+                value={FormData.email}
+                onChange={(e) =>
+                  setFormData({ ...FormData, email: e.target.value })
+                }
                 placeholder="thisis@Email.com.id"
               />
             </div>
@@ -39,6 +58,10 @@ const Contact = () => {
                 type="text"
                 className="group-input-text"
                 name="telp"
+                value={FormData.telp}
+                onChange={(e) =>
+                  setFormData({ ...FormData, telp: e.target.value })
+                }
                 placeholder="02972341234"
               />
             </div>
@@ -46,6 +69,10 @@ const Contact = () => {
               <label className="group-input-label">{t("komentar")}</label>
               <textarea
                 name="komentar"
+                onChange={(e) =>
+                  setFormData({ ...FormData, komentar: e.target.value })
+                }
+                value={FormData.komentar}
                 className="group-input-text"
                 cols="30"
                 rows="10"

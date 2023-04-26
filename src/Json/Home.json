@@ -36,24 +36,142 @@
   "Work": [
     {
       "id": "asd113asdsahd",
-      "Icon": "http://localhost:3000/static/media/Icon_Webdesain.9db096fb5c9ad801b93671d92cbfcd0f.svg",
+      "Icon": "/image/Icon_Webdesain.svg",
       "Name": "Desain Aplikasi",
       "Desc": "mendesain aplikasi atraktif, efisien, responsif dan mobile-friendly untuk meningkatkan pengalaman pengguna.",
       "Lang": "id"
     },
     {
       "id": "asd114asdsahd",
-      "Icon": "http://localhost:3000/static/media/Icon_Webdesain.9db096fb5c9ad801b93671d92cbfcd0f.svg",
+      "Icon": "/image/Icon_Webdesain.svg",
       "Name": "Application Desain",
       "Desc": "designing attractive, efficient, responsive and mobile-friendly applications to improve user experience.",
       "Lang": "en"
     },
     {
       "id": "asd115asdsahd",
-      "Icon": "http://localhost:3000/static/media/Icon_Webdesain.9db096fb5c9ad801b93671d92cbfcd0f.svg",
+      "Icon": "/image/Icon_Webdesain.svg",
       "Name": "تصميم التطبيق",
       "Desc": "تصميم تطبيقات جذابة وفعالة وسريعة الاستجابة ومناسبة للجوّال لتحسين تجربة المستخدم.",
       "Lang": "ar"
+    },
+    {
+      "id": "asd123asdsahd",
+      "Icon": "/image/Icon_Frontend.svg",
+      "Name": "Front End",
+      "Desc": "Pengetahuan tentang HTML, CSS, dan JavaScript. dapat mengaplikasikan prinsip-prinsip desain responsif",
+      "Lang": "id"
+    },
+    {
+      "id": "asd124asdsahd",
+      "Icon": "/image/Icon_Frontend.svg",
+      "Name": "Front End",
+      "Desc": "Knowledge of HTML, CSS and JavaScript. can apply responsive design principles",
+      "Lang": "en"
+    },
+    {
+      "id": "asd125asdsahd",
+      "Icon": "/image/Icon_Frontend.svg",
+      "Name": "Front End",
+      "Desc": "معرفة HTML و CSS وجافا سكريبت. يمكن تطبيق مبادئ التصميم سريعة الاستجابة",
+      "Lang": "ar"
+    },
+    {
+      "id": "asd133asdsahd",
+      "Icon": "/image/Icon_Backend.svg",
+      "Name": "Back End",
+      "Desc": "Memahami bahasa pemrograman PHP, Javascript dan MySQL , mengkonfigurasi server serta mengelola basis data",
+      "Lang": "id"
+    },
+    {
+      "id": "asd134asdsahd",
+      "Icon": "/image/Icon_Backend.svg",
+      "Name": "Back End",
+      "Desc": "Understand PHP, Javascript and MySQL programming languages, configure servers and manage databases",
+      "Lang": "en"
+    },
+    {
+      "id": "asd135asdsahd",
+      "Icon": "/image/Icon_Backend.svg",
+      "Name": "Back End",
+      "Desc": "فهم لغات برمجة PHP, Javascript و MySQL ، وتكوين الخوادم وإدارة قواعد البيانات",
+      "Lang": "ar"
+    }
+  ],
+  "Portofolio": [
+    {
+      "Id": "Porto11asdwd",
+      "Name": "Subrek Android",
+      "Image": "/image/image_portofolio-1.jpg",
+      "Desc": "Website untuk mempromosikan aplikasi android dibidang finansial agar mempermudah mengatur finansial serta transaksi anda.",
+      "Lang": "id"
+    },
+    {
+      "Id": "Porto21asdwd",
+      "Name": "Subrek Android",
+      "Image": "/image/image_portofolio-1.jpg",
+      "Desc": "A website to promote android applications in the financial sector to make it easier to manage your finances and transactions.",
+      "Lang": "en"
+    },
+    {
+      "Id": "Porto31asdwd",
+      "Name": "Subrek Android",
+      "Image": "/image/image_portofolio-1.jpg",
+      "Desc": "موقع ويب للترويج لتطبيقات Android في القطاع المالي لتسهيل إدارة أموالك ومعاملاتك.",
+      "Lang": "ar"
+    },
+    {
+      "Id": "Porto12asdwd",
+      "Name": "Markey",
+      "Image": "/image/image_portofolio-2.jpg",
+      "Desc": "Markey adalah marketplace menyediakan segala kebutuhan sehari - hari",
+      "Lang": "id"
+    },
+    {
+      "Id": "Porto22asdwd",
+      "Name": "Markey",
+      "Image": "/image/image_portofolio-2.jpg",
+      "Desc": "Markey is a marketplace providing all your daily needs",
+      "Lang": "en"
+    },
+    {
+      "Id": "Porto32asdwd",
+      "Name": "Markey",
+      "Image": "/image/image_portofolio-2.jpg",
+      "Desc": "Markey هو سوق يوفر جميع احتياجاتك اليومية",
+      "Lang": "ar"
+    },
+    {
+      "Id": "Porto13asdwd",
+      "Name": "Podia Podcast",
+      "Image": "/image/image_portofolio-3.jpg",
+      "Desc": "Podia Podcast adalah aplikasi kumpulan konten audio untuk menghibur anda. konten audio podcast terlengkap dari berbagai negara.",
+      "Lang": "id"
+    },
+    {
+      "Id": "Porto23asdwd",
+      "Name": "Podia Podcast",
+      "Image": "/image/image_portofolio-3.jpg",
+      "Desc": "Podia Podcast is an application that collects audio content to entertain you. complete podcast audio content from various countries.",
+      "Lang": "en"
+    },
+    {
+      "Id": "Porto33asdwd",
+      "Name": "Podia Podcast",
+      "Image": "/image/image_portofolio-3.jpg",
+      "Desc": "Podia Podcast هو تطبيق يجمع المحتوى الصوتي للترفيه عنك. المحتوى الصوتي الكامل للبودكاست من مختلف البلدان.",
+      "Lang": "ar"
+    }
+  ],
+  "Testimoni": [
+    {
+      "Id": "Testi11gkh",
+      "Name": "Asmuni Hartati",
+      "Image": "/image/Image2.jpg",
+      "Title": "Directur",
+      "Rating": 3.5,
+      "Desc": "Website Nurpuji memberikan layanan yang sangat baik dan profesional. Saya sangat puas dengan hasil yang diberikan oleh website Nurpuji. Sangat merekomendasikan website ini kepada siapapun yang membutuhkan layanan pembuatan website dengan kualitas terbaik. Terima kasih Nurpuji!",
+      "Lang": "id"
     }
   ]
 }

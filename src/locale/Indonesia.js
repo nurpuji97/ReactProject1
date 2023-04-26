@@ -29,6 +29,7 @@ export default {
       "Memahami bahasa pemrograman PHP dan MySQL , mengkonfigurasi server serta mengelola basis data",
     subTitlePorto: "Ini adalah karya terbaik aku",
     linkPorto: "Lihat Project Lainnya........",
+    linkCardPorto: "Lihat Selengkapnya........",
     testiPorto: "Testimoni",
     desContact1:
       "agar Anda dapat tetap terhubung dan mendapatkan informasi terbaru dari kami. Jangan ragu untuk menghubungi kami jika Anda memiliki pertanyaan, saran, atau masukan. Kami akan selalu siap untuk membantu Anda.",

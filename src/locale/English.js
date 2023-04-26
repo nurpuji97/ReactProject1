@@ -29,6 +29,7 @@ export default {
       "Understand PHP and MySQL programming languages, configure servers and manage databases",
     subTitlePorto: "This is my best work",
     linkPorto: "See More Projects........",
+    linkCardPorto: "View more........",
     testiPorto: "Testimonials",
     desContact1:
       "so you can stay connected and get the latest information from us. Feel free to contact us if you have any questions, suggestions or feedback. We will always be ready to help you.",
