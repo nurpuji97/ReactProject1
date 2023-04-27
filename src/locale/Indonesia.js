@@ -39,5 +39,11 @@ export default {
     tlp: "Nomor Telepon",
     komentar: "Komentar",
     kirim: "Kirim",
+    NamaKosong: "Nama tidak boleh Kosong",
+    EmailKosong: "Email tidak boleh kosong",
+    EmailNotValid: "Format tidak valid",
+    TelpKosong: "Nomor telepon tidak boleh kosong",
+    TelpFormat: "Nomor telepon harus angka dan +",
+    KomentarKosong: "Komentar tidak boleh kosong",
   },
 };

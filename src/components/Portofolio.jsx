@@ -66,7 +66,7 @@ const Portofolio = (props) => {
       </div>
 
       {/* Testimoni */}
-      <div className="testimoni">
+      <div className={`testimoni ${FiltertestiData <= 0 ? "hidden" : "block"}`}>
         <p className="testimoni-title">{t("testiPorto")}</p>
 
         {/* testimoni card */}

@@ -207,7 +207,7 @@
   }
 
   .testimoni-container-card {
-    @apply flex flex-row h-[370px] es:max-lg:h-full;
+    @apply flex flex-row h-[340px] es:max-lg:h-full;
   }
 
   .testimoni-card {
@@ -289,7 +289,7 @@
 
   /* footer */
   .footer {
-    @apply py-14 px-20;
+    @apply pt-14 px-20;
   }
 
   .footer-container {
@@ -318,5 +318,10 @@
 
   .copyright {
     @apply py-[15px] font-light text-primary-shades-500 dark:text-primary-tints-500 text-center text-xs;
+  }
+
+  /* error Message */
+  .errorMessage {
+    @apply mb-[5px] font-light text-primary-tints-100 text-sm;
   }
 }

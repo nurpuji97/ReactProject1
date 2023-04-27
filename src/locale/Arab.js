@@ -39,5 +39,11 @@ export default {
     tlp: "رقم التليفون",
     komentar: "تعليق",
     kirim: "يرسل",
+    NamaKosong: "لا يمكن أن يكون الاسم فارغًا",
+    EmailKosong: "البريد الإلكتروني لا يمكن أن يكون فارغا",
+    EmailNotValid: "تنسيق غير صالح",
+    TelpKosong: "لا يمكن ترك رقم الهاتف فارغًا",
+    TelpFormat: "يجب أن يكون رقم الهاتف أرقامًا و +",
+    KomentarKosong: "لا يمكن ترك التعليقات فارغة",
   },
 };

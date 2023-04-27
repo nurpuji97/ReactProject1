@@ -39,5 +39,11 @@ export default {
     tlp: "Phone Number",
     komentar: "Comment",
     kirim: "Send",
+    NamaKosong: "Name cannot be empty",
+    EmailKosong: "Email cannot be blank",
+    EmailNotValid: "Format is not valid",
+    TelpKosong: "Phone number cannot be empty",
+    TelpFormat: "Phone number must be numbers and +",
+    KomentarKosong: "Comments cannot be empty",
   },
 };
