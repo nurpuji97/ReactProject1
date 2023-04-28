@@ -33,71 +33,7 @@
       "Jurusan": "Pemograman Embeded System Berbasis IOT"
     }
   ],
-  "Work": [
-    {
-      "id": "asd113asdsahd",
-      "Icon": "/image/Icon_Webdesain.svg",
-      "Name": "Desain Aplikasi",
-      "Desc": "mendesain aplikasi atraktif, efisien, responsif dan mobile-friendly untuk meningkatkan pengalaman pengguna.",
-      "Lang": "id"
-    },
-    {
-      "id": "asd114asdsahd",
-      "Icon": "/image/Icon_Webdesain.svg",
-      "Name": "Application Desain",
-      "Desc": "designing attractive, efficient, responsive and mobile-friendly applications to improve user experience.",
-      "Lang": "en"
-    },
-    {
-      "id": "asd115asdsahd",
-      "Icon": "/image/Icon_Webdesain.svg",
-      "Name": "تصميم التطبيق",
-      "Desc": "تصميم تطبيقات جذابة وفعالة وسريعة الاستجابة ومناسبة للجوّال لتحسين تجربة المستخدم.",
-      "Lang": "ar"
-    },
-    {
-      "id": "asd123asdsahd",
-      "Icon": "/image/Icon_Frontend.svg",
-      "Name": "Front End",
-      "Desc": "Pengetahuan tentang HTML, CSS, dan JavaScript. dapat mengaplikasikan prinsip-prinsip desain responsif",
-      "Lang": "id"
-    },
-    {
-      "id": "asd124asdsahd",
-      "Icon": "/image/Icon_Frontend.svg",
-      "Name": "Front End",
-      "Desc": "Knowledge of HTML, CSS and JavaScript. can apply responsive design principles",
-      "Lang": "en"
-    },
-    {
-      "id": "asd125asdsahd",
-      "Icon": "/image/Icon_Frontend.svg",
-      "Name": "Front End",
-      "Desc": "معرفة HTML و CSS وجافا سكريبت. يمكن تطبيق مبادئ التصميم سريعة الاستجابة",
-      "Lang": "ar"
-    },
-    {
-      "id": "asd133asdsahd",
-      "Icon": "/image/Icon_Backend.svg",
-      "Name": "Back End",
-      "Desc": "Memahami bahasa pemrograman PHP, Javascript dan MySQL , mengkonfigurasi server serta mengelola basis data",
-      "Lang": "id"
-    },
-    {
-      "id": "asd134asdsahd",
-      "Icon": "/image/Icon_Backend.svg",
-      "Name": "Back End",
-      "Desc": "Understand PHP, Javascript and MySQL programming languages, configure servers and manage databases",
-      "Lang": "en"
-    },
-    {
-      "id": "asd135asdsahd",
-      "Icon": "/image/Icon_Backend.svg",
-      "Name": "Back End",
-      "Desc": "فهم لغات برمجة PHP, Javascript و MySQL ، وتكوين الخوادم وإدارة قواعد البيانات",
-      "Lang": "ar"
-    }
-  ],
+
   "Portofolio": [
     {
       "Id": "Porto11asdwd",
