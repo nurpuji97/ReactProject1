@@ -48,20 +48,15 @@ const Navbar = (props) => {
               isActive ? "es:max-lg:block" : "es:max-lg:hidden"
             }`}
           >
-            <li>
-              <a href="/" className="btn">
-                {t("home")}
-              </a>{" "}
-            </li>
-
             {props.isDetailCard ? (
-              <li>
-                <a className={`btn `} href="">
-                  Project
-                </a>
-              </li>
+              <li></li>
             ) : (
               <>
+                <li>
+                  <a href="/" className="btn">
+                    {t("home")}
+                  </a>{" "}
+                </li>
                 <li>
                   <a
                     href="#about"
@@ -94,7 +89,7 @@ const Navbar = (props) => {
         <hr
           className={`dark:text-primary-tones-400 text-primary-tints-100 relative  ${
             isActive ? "block" : "hidden"
-          } `}
+          } ${props.isDetailCard ? "hidden" : ""}`}
         />
 
         {/* column 2 */}
@@ -112,7 +107,7 @@ const Navbar = (props) => {
             {isOpen && (
               <ul
                 className={`dropdown-menu ${
-                  props.isDetailCard ? "es:max-lg:top-[255px]" : ""
+                  props.isDetailCard ? "es:max-lg:top-[186px]" : ""
                 }`}
               >
                 <li className={`dropdown-menu-list `}>
