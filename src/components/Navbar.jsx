@@ -10,7 +10,7 @@ import { useTranslation } from "react-i18next";
 import i18n from "../i18n";
 import { LanguageActions } from "../store/LanguageSlice";
 
-const Navbar = () => {
+const Navbar = (props) => {
   // dropdown Menu Mobile
   const [isActive, setIsActive] = useState(false);
 
@@ -53,21 +53,41 @@ const Navbar = () => {
                 {t("home")}
               </a>{" "}
             </li>
-            <li>
-              <a href="#about" className="btn">
-                {t("tentang")}
-              </a>
-            </li>
-            <li>
-              <a href="#portofolio" className="btn">
-                {t("portofolio")}
-              </a>
-            </li>
-            <li>
-              <a className="btn" href="#Contact">
-                {t("kontak")}
-              </a>
-            </li>
+
+            {props.isDetailCard ? (
+              <li>
+                <a className={`btn `} href="">
+                  Project
+                </a>
+              </li>
+            ) : (
+              <>
+                <li>
+                  <a
+                    href="#about"
+                    className={`btn ${props.isDetailCard ? "hidden" : ""}`}
+                  >
+                    {t("tentang")}
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#portofolio"
+                    className={`btn ${props.isDetailCard ? "hidden" : ""}`}
+                  >
+                    {t("portofolio")}
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className={`btn ${props.isDetailCard ? "hidden" : ""}`}
+                    href="#Contact"
+                  >
+                    {t("kontak")}
+                  </a>
+                </li>
+              </>
+            )}
           </ul>
         </div>
 
@@ -90,8 +110,12 @@ const Navbar = () => {
             <IoCaretDown className="self-center ml-4" />
 
             {isOpen && (
-              <ul className="dropdown-menu">
-                <li className="dropdown-menu-list">
+              <ul
+                className={`dropdown-menu ${
+                  props.isDetailCard ? "es:max-lg:top-[255px]" : ""
+                }`}
+              >
+                <li className={`dropdown-menu-list `}>
                   <img src={IndonesiaFlag} className="w-6" alt="indo-flag" />
                   <button
                     onClick={() => handleLanguageChange("id")}

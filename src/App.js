@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import DetailCard from "./pages/DetailCard";
 
 function App() {
   const isDarkMode = useSelector((state) => state.dark.isDarkMode);
@@ -12,6 +13,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/detailCard" element={<DetailCard />} />
         </Routes>
       </BrowserRouter>
     </div>
