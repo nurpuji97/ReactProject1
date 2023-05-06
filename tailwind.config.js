@@ -11,7 +11,7 @@ module.exports = {
       sans: ["Lato", "sans-serif"],
     },
     screens: {
-      es: "320px",
+      es: "300px",
       sm: "640px",
       md: "760px",
       lg: "1024px",

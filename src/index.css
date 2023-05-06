@@ -293,11 +293,11 @@
   }
 
   .footer-container {
-    @apply flex justify-between;
+    @apply flex justify-between es:max-sm:flex-col es:max-sm:justify-center es:max-sm:gap-3;
   }
 
   .sosmed-footer {
-    @apply flex gap-2;
+    @apply flex gap-2 es:max-sm:self-center;
   }
 
   .sosmed-footer img {
@@ -305,7 +305,7 @@
   }
 
   .privasi-footer {
-    @apply flex gap-4 text-primary-shades-500 dark:text-primary-tints-500 text-sm pb-3;
+    @apply flex gap-4 text-primary-shades-500 dark:text-primary-tints-500 text-sm pb-3 es:max-sm:self-center;
   }
 
   .link-privasi {
@@ -318,6 +318,64 @@
 
   .copyright {
     @apply py-[15px] font-light text-primary-shades-500 dark:text-primary-tints-500 text-center text-xs;
+  }
+
+  /* Header  */
+  .Header {
+    @apply pt-[120px] pb-[30px] px-20 es:max-lg:px-5;
+  }
+
+  .col-1 {
+    @apply flex justify-between  es:max-lg:items-center es:max-lg:flex-row;
+  }
+
+  .btn_back {
+    @apply py-[10px] px-[20px] flex gap-1 bg-primary-tints-100 rounded-md text-primary-shades-500 shadow-md shadow-primary-tints-100/50 font-light text-sm hover:bg-primary-tones-100 dark:bg-primary-default dark:shadow-none dark:hover:bg-primary-tints-100;
+  }
+
+  .breadcrumb {
+    @apply flex text-primary-shades-500 font-light text-sm gap-1 dark:text-primary-tints-500;
+  }
+
+  .breadcrumb-item.active {
+    @apply text-primary-tones-300;
+  }
+
+  .Header-title {
+    @apply mt-[60px] text-[30px] text-primary-shades-500 font-bold text-center capitalize dark:text-primary-tints-500;
+  }
+
+  /* Detail Content Section */
+  .DetailContent {
+    @apply pt-1 px-20 es:max-lg:py-3 es:max-lg:px-5;
+  }
+
+  .DetailContent-image {
+    @apply rounded border border-primary-tones-400;
+  }
+
+  .DetailContent-detail {
+    @apply mt-[40px] flex gap-6 justify-between es:max-sm:flex-col;
+  }
+
+  .DetailContent-leftSide {
+    @apply w-1/2 es:max-sm:w-full;
+  }
+
+  .DetailContent-rightSide {
+    @apply w-1/2 es:max-sm:w-full;
+  }
+
+  .groupDesc {
+    @apply mb-[35px];
+  }
+
+  .groupDesc-title {
+    @apply text-primary-shades-500 font-semibold text-[18px] mb-[5px] dark:text-primary-tints-500;
+  }
+
+  .groupDesc-textarea {
+    @apply text-primary-shades-500 font-light text-sm flex gap-4 dark:text-primary-tints-500;
   }
 
   /* error Message */

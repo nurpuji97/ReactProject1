@@ -39,6 +39,7 @@ export default {
     tlp: "Phone Number",
     komentar: "Comment",
     kirim: "Send",
+    Kembali: "Back",
     NamaKosong: "Name cannot be empty",
     EmailKosong: "Email cannot be blank",
     EmailNotValid: "Format is not valid",

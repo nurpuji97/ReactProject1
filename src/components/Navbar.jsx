@@ -107,7 +107,7 @@ const Navbar = (props) => {
             {isOpen && (
               <ul
                 className={`dropdown-menu ${
-                  props.isDetailCard ? "es:max-lg:top-[186px]" : ""
+                  props.isDetailCard ? "es:max-lg:top-[135px]" : ""
                 }`}
               >
                 <li className={`dropdown-menu-list `}>
