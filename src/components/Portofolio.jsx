@@ -52,7 +52,10 @@ const Portofolio = (props) => {
               <p className="portofolio-container-card-desc-Subtitle">
                 {Data.Desc}
               </p>
-              <Link to="" className="portofolio-container-card-desc-link">
+              <Link
+                to="Card/Porto11asdwd"
+                className="portofolio-container-card-desc-link"
+              >
                 {t("linkCardPorto")}
               </Link>
             </div>

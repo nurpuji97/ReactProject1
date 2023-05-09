@@ -46,5 +46,11 @@ export default {
     TelpKosong: "Phone number cannot be empty",
     TelpFormat: "Phone number must be numbers and +",
     KomentarKosong: "Comments cannot be empty",
+    Deskripsi: "Description",
+    TanggalSelesai: "Date of completion",
+    Kategori: "Categories",
+    Penulis: "Writer",
+    Alat: "Tools",
+    Unduh: "Download",
   },
 };

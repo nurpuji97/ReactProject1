@@ -46,5 +46,11 @@ export default {
     TelpKosong: "لا يمكن ترك رقم الهاتف فارغًا",
     TelpFormat: "يجب أن يكون رقم الهاتف أرقامًا و +",
     KomentarKosong: "لا يمكن ترك التعليقات فارغة",
+    Deskripsi: "وصف",
+    TanggalSelesai: "تاريخ الانتهاء",
+    Kategori: "فئة",
+    Penulis: "كاتب",
+    Alat: "أداة",
+    Unduh: "تحميل",
   },
 };

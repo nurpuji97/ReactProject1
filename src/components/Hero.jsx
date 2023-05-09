@@ -19,7 +19,9 @@ const Hero = (props) => {
           <div className="mb-2">{t("titleHero1")} &</div>
           <div>{t("titleHero2")}</div>
         </h1>
-        <div className="buttonHero">{t("buttonHero")}</div>
+        <a href="#Contact" className="buttonHero">
+          {t("buttonHero")}
+        </a>
 
         <div className="projectCount">
           <div className="project">

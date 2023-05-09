@@ -46,5 +46,11 @@ export default {
     TelpKosong: "Nomor telepon tidak boleh kosong",
     TelpFormat: "Nomor telepon harus angka dan +",
     KomentarKosong: "Komentar tidak boleh kosong",
+    Deskripsi: "Deskripsi",
+    TanggalSelesai: "Tanggal Selesai",
+    Kategori: "Kategori",
+    Penulis: "Penulis",
+    Alat: "Alat",
+    Unduh: "Unduh",
   },
 };
