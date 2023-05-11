@@ -382,14 +382,14 @@
 
   /* form */
   .search-form {
-    @apply flex mt-[40px] justify-end;
+    @apply flex mt-[40px]  justify-end;
   }
 
   /* Search */
   .input-search {
     @apply py-[8px] px-[15px] border border-primary-tones-300 text-primary-shades-400 rounded-l-sm 
     text-sm dark:bg-primary-shades-400 dark:text-primary-tints-400
-    placeholder-primary-tones-400 focus:outline-none focus:ring-1 focus:ring-primary-shades-300;
+    placeholder-primary-tones-400 focus:outline-none focus:ring-1 focus:ring-primary-shades-300 es:max-md:w-[100%];
   }
 
   /* dropdown */
@@ -409,6 +409,28 @@
   /* submit Search */
   .submit-button {
     @apply px-4 rounded-r bg-primary-default shadow-primary-default hover:bg-primary-tints-200;
+  }
+
+  /* Project Content */
+  .ContentProject {
+    @apply py-14 px-20 es:max-lg:py-3 es:max-lg:px-10;
+  }
+
+  /* card */
+  .cardProject {
+    @apply w-[400px] py-[30px] px-[30px] bg-primary-tones-200 rounded dark:bg-primary-shades-200;
+  }
+
+  .titleCard {
+    @apply text-[21px] font-bold text-primary-shades-500 mb-[15px] text-center dark:text-primary-tints-500;
+  }
+
+  .descCard {
+    @apply mb-[45px] font-light text-primary-shades-400 text-[12px] dark:text-primary-tints-400;
+  }
+
+  .btnCard {
+    @apply font-medium text-[12px] text-center bg-primary-default inline-block w-[100%] py-2 rounded hover:bg-primary-tints-100;
   }
 
   /* error Message */
