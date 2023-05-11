@@ -48,7 +48,7 @@ const Navbar = (props) => {
               isActive ? "es:max-lg:block" : "es:max-lg:hidden"
             }`}
           >
-            {props.isDetailCard ? (
+            {props.isHidden ? (
               <li></li>
             ) : (
               <>
@@ -60,7 +60,7 @@ const Navbar = (props) => {
                 <li>
                   <a
                     href="#about"
-                    className={`btn ${props.isDetailCard ? "hidden" : ""}`}
+                    className={`btn ${props.isHidden ? "hidden" : ""}`}
                   >
                     {t("tentang")}
                   </a>
@@ -68,14 +68,14 @@ const Navbar = (props) => {
                 <li>
                   <a
                     href="#portofolio"
-                    className={`btn ${props.isDetailCard ? "hidden" : ""}`}
+                    className={`btn ${props.isHidden ? "hidden" : ""}`}
                   >
                     {t("portofolio")}
                   </a>
                 </li>
                 <li>
                   <a
-                    className={`btn ${props.isDetailCard ? "hidden" : ""}`}
+                    className={`btn ${props.isHidden ? "hidden" : ""}`}
                     href="#Contact"
                   >
                     {t("kontak")}
@@ -89,7 +89,7 @@ const Navbar = (props) => {
         <hr
           className={`dark:text-primary-tones-400 text-primary-tints-100 relative  ${
             isActive ? "block" : "hidden"
-          } ${props.isDetailCard ? "hidden" : ""}`}
+          } ${props.isHidden ? "hidden" : ""}`}
         />
 
         {/* column 2 */}
@@ -107,7 +107,7 @@ const Navbar = (props) => {
             {isOpen && (
               <ul
                 className={`dropdown-menu ${
-                  props.isDetailCard ? "es:max-lg:top-[135px]" : ""
+                  props.isHidden ? "es:max-lg:top-[135px]" : ""
                 }`}
               >
                 <li className={`dropdown-menu-list `}>

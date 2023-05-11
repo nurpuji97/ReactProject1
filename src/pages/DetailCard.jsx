@@ -12,7 +12,7 @@ const DetailCard = () => {
   ];
   return (
     <div className="dark:bg-primary-shades-500">
-      <Navbar isDetailCard />
+      <Navbar isHidden />
       <Header breadcrumb={BreadcrumbItems} data={DataDetail} />
       <ContentDetail data={DataDetail} />
       <Footer />
