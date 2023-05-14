@@ -17,14 +17,15 @@ const Header = ({ breadcrumb, data, isHidden, isProject }) => {
       <div className="col-1">
         {/* button back */}
         {isProject ? (
-          <NavLink to="/project" className="btn_back">
+          <NavLink to="/" className="btn_back">
             <img src={IconBack} alt="" className="text-sm" />
 
             {t("Kembali")}
           </NavLink>
         ) : (
-          <NavLink to="/" className="btn_back">
+          <NavLink to="/project" className="btn_back">
             <img src={IconBack} alt="" className="text-sm" />
+
             {t("Kembali")}
           </NavLink>
         )}

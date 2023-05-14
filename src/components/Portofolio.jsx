@@ -53,7 +53,7 @@ const Portofolio = (props) => {
                 {Data.Desc}
               </p>
               <Link
-                to="Card/Porto11asdwd"
+                to="/Porto11asdwd"
                 className="portofolio-container-card-desc-link"
               >
                 {t("linkCardPorto")}
@@ -63,7 +63,7 @@ const Portofolio = (props) => {
         ))}
 
         {/* Link Semua Project */}
-        <Link to="" className="portofolio-continue">
+        <Link to="/project" className="portofolio-continue">
           {t("linkPorto")}
         </Link>
       </div>

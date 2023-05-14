@@ -438,6 +438,20 @@
     @apply font-medium text-[12px] text-center bg-primary-default inline-block w-[100%] py-2 rounded hover:bg-primary-tints-100;
   }
 
+  /* pagination Project */
+  .pagination {
+    @apply flex flex-wrap justify-center mt-[1rem];
+  }
+
+  .pagination > li {
+    @apply first:mr-5 last:ml-5 es:max-sm:first:mr-1 es:max-sm:last:ml-1;
+  }
+
+  .pagination > li > a {
+    @apply cursor-pointer inline-block p-[0.5rem] mr-2 rounded transition delay-300 text-primary-shades-500 ease-in-out es:max-sm:mr-1 hover:bg-primary-tones-300 focus:outline-none focus:shadow-md
+    dark:text-primary-tints-500 dark:hover:text-primary-shades-500;
+  }
+
   /* error Message */
   .errorMessage {
     @apply mb-[5px] font-light text-primary-tints-100 text-sm;
