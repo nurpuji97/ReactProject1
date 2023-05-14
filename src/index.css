@@ -416,9 +416,14 @@
     @apply py-14 px-20 es:max-lg:py-3 es:max-lg:px-10;
   }
 
+  /* container card */
+  .containerCard-Project {
+    @apply flex flex-row gap-4 flex-wrap justify-center;
+  }
+
   /* card */
   .cardProject {
-    @apply w-[400px] py-[30px] px-[30px] bg-primary-tones-200 rounded dark:bg-primary-shades-200;
+    @apply w-[380px] py-[30px] px-[30px] bg-primary-tones-200 rounded dark:bg-primary-shades-200;
   }
 
   .titleCard {
