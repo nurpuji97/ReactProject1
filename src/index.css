@@ -392,23 +392,9 @@
     placeholder-primary-tones-400 focus:outline-none focus:ring-1 focus:ring-primary-shades-300 es:max-md:w-[100%];
   }
 
-  /* dropdown */
-  .btn-search {
-    @apply flex relative py-2 px-3 border-y border-primary-tones-300 text-primary-shades-400 cursor-pointer text-sm
-    hover:bg-primary-default hover:text-primary-shades-500 hover:font-medium es:max-lg:justify-center dark:bg-primary-shades-400 dark:text-primary-tints-400 hover:dark:text-primary-tones-300;
-  }
-
-  .dropdown-menu-search {
-    @apply absolute w-[100px] right-0 top-10 z-10 bg-white rounded-b-md py-4 px-1 border dark:bg-primary-shades-400 dark:border-primary-tints-400;
-  }
-
-  .dropdown-menu-list-search {
-    @apply gap-2 px-2 py-1 hover:bg-primary-tints-400 hover:rounded dark:text-primary-tints-500 hover:dark:text-primary-shades-500;
-  }
-
   /* submit Search */
   .submit-button {
-    @apply px-4 rounded-r bg-primary-default shadow-primary-default hover:bg-primary-tints-200;
+    @apply px-4 rounded-r border border-y-primary-default border-r-primary-default border-l-0 shadow-primary-default hover:bg-primary-tints-200 dark:bg-primary-tints-200 dark:hover:bg-primary-tones-300;
   }
 
   /* Project Content */

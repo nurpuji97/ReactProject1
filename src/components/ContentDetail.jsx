@@ -3,17 +3,15 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Fade from "react-reveal/Fade";
 
-const ContentDetail = ({ data }) => {
+const ContentDetail = ({ dataJson, tools, download }) => {
   const { t } = useTranslation();
 
-  const dataTools = data.Tools;
-  const dataDownload = data.Downloads;
   return (
     <Fade delay={500}>
       <div className="DetailContent">
         {/* image */}
         <img
-          src={data.Image}
+          src={dataJson.imageUrl}
           className="DetailContent-image"
           alt="detailImage"
         />
@@ -24,25 +22,25 @@ const ContentDetail = ({ data }) => {
               {/* Description */}
               <div className="groupDesc">
                 <p className="groupDesc-title">{t("Deskripsi")}</p>
-                <p className="groupDesc-textarea">{data.Desc}</p>
+                <p className="groupDesc-textarea">{dataJson.Description}</p>
               </div>
 
               {/* Date End */}
               <div className="groupDesc">
                 <p className="groupDesc-title">{t("TanggalSelesai")}</p>
-                <p className="groupDesc-textarea">{data.DateEnd}</p>
+                <p className="groupDesc-textarea">{dataJson.DateEnd}</p>
               </div>
 
               {/* Ketegori */}
               <div className="groupDesc">
                 <p className="groupDesc-title">{t("Kategori")}</p>
-                <p className="groupDesc-textarea">{data.Kategori}</p>
+                <p className="groupDesc-textarea">{dataJson.Kategori}</p>
               </div>
 
               {/* Author */}
               <div className="groupDesc">
                 <p className="groupDesc-title">{t("Penulis")}</p>
-                <p className="groupDesc-textarea">{data.Author}</p>
+                <p className="groupDesc-textarea">{dataJson.Author}</p>
               </div>
             </div>
 
@@ -52,10 +50,10 @@ const ContentDetail = ({ data }) => {
               <div className="groupDesc">
                 <p className="groupDesc-title">{t("Alat")}</p>
                 <p className="groupDesc-textarea">
-                  {dataTools.map((items) => (
+                  {tools.map((items) => (
                     <img
                       key={items.id}
-                      src={items.image}
+                      src={items.imageUrl}
                       className="w-[32px]"
                       alt="gambar-Detail"
                     />
@@ -67,18 +65,18 @@ const ContentDetail = ({ data }) => {
               <div className="groupDesc">
                 <p className="groupDesc-title">{t("Unduh")}</p>
                 <p className="groupDesc-textarea">
-                  {dataDownload.map((down) => (
+                  {download.map((down) => (
                     <Link
                       key={down.id}
                       to={down.link}
-                      className="flex flex-col py-2 px-2 border border-primary-tints-400 rounded dark:text-primary-tints-500 dark:hover:text-primary-shades-500  hover:bg-primary-tones-300"
+                      className="flex flex-col py-2 px-2 border border-primary-tints-400 rounded dark:text-primary-tints-500 dark:hover:text-primary-shades-500  hover:bg-primary-tints-400"
                     >
                       <img
-                        src={down.image}
+                        src={down.imageUrl}
                         className="w-[32px] self-center mb-1 dark:bg-primary-tints-500"
                         alt="DownloadIcon"
                       />
-                      <span>{down.category}</span>
+                      <span>{down.name}</span>
                     </Link>
                   ))}
                 </p>

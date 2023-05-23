@@ -1,23 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import ReactPaginate from "react-paginate";
 
-const Pagination = () => {
-  const [currentPage, setCurrentPage] = useState(0);
-
-  const handlePageClick = (data) => {
-    setCurrentPage(data.selected);
-  };
-
+const Pagination = (props) => {
   return (
-    <div className="pagination">
+    <div className="pagination" key={props.row}>
       <ReactPaginate
         previousLabel={"Prev"}
         nextLabel={"Next"}
         breakLabel={"..."}
-        pageCount={10}
+        pageCount={Math.min(9, props.pageCount)}
         marginPagesDisplayed={2}
         pageRangeDisplayed={2}
-        onPageChange={handlePageClick}
+        onPageChange={props.pageChange}
         containerClassName={"pagination"}
         activeClassName={"active"}
       />

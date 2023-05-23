@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Star from "../elements/Star";
 import { useTranslation } from "react-i18next";
@@ -13,17 +13,29 @@ import "swiper/css/pagination";
 
 // import required modules
 import { FreeMode, Autoplay, Pagination } from "swiper";
+import axios from "axios";
 
 const Portofolio = (props) => {
   const { t } = useTranslation();
 
-  // Portofolio
-  let PortoProps = props.JsonData.Portofolio;
+  const [portofolio, setPortofolio] = useState([]);
+
+  const getPortofolio = async () => {
+    const response = await axios.get("http://localhost:4000/portofolio");
+
+    setPortofolio(response.data.response);
+  };
+
+  useEffect(() => {
+    getPortofolio();
+  }, []);
 
   // Filter Portofolio
-  const FilterData = Object.values(PortoProps).filter(
-    (value) => value.Lang === props.translate
+  const FilterData = Object.values(portofolio).filter(
+    (value) => value.Language === props.translate
   );
+
+  // console.log(FilterData);
 
   // Testimoni
   let TestiProps = props.JsonData.Testimoni;
@@ -41,23 +53,23 @@ const Portofolio = (props) => {
         <p className="portofolio-subtitle">{t("subTitlePorto")}</p>
 
         <div className="portofolio-container">
-          {FilterData.map((Data) => (
+          {FilterData.slice(0, 2).map((Data) => (
             <Fade>
-              <div key={Data.Id} className="portofolio-container-card">
+              <div key={Data.id} className="portofolio-container-card">
                 <img
-                  src={Data.Image}
+                  src={Data.imageUrl}
                   className="portofolio-container-card-image"
                   alt="gambar-portofolio"
                 />
                 <div className="portofolio-container-card-desc">
                   <p className="portofolio-container-card-desc-title">
-                    {Data.Name}
+                    {Data.name}
                   </p>
                   <p className="portofolio-container-card-desc-Subtitle">
-                    {Data.Desc}
+                    {Data.Description}
                   </p>
                   <Link
-                    to="/Porto11asdwd"
+                    to={`Project/${Data.id}`}
                     className="portofolio-container-card-desc-link"
                   >
                     {t("linkCardPorto")}

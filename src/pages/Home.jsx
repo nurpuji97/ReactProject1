@@ -15,7 +15,7 @@ const Home = () => {
     <div className="relative mt-[76px] dark:bg-primary-shades-500">
       <Navbar />
       <Hero JsonData={HomeJson} />
-      <About JsonData={HomeJson} translate={isTranslate} />
+      <About />
       <Portofolio JsonData={HomeJson} translate={isTranslate} />
       <Contact />
       <Footer />

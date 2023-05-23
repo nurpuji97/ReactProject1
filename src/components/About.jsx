@@ -1,15 +1,33 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Tabs from "../elements/tabs/Tabs";
 import Image from "../images/image.jpg";
 import IconWeb from "../images/Icon_Webdesain.svg";
 import IconFront from "../images/Icon_Frontend.svg";
 import IconBack from "../images/Icon_Backend.svg";
 import Fade from "react-reveal/Fade";
+import axios from "axios";
 
 import { useTranslation } from "react-i18next";
 
-const About = (props) => {
-  let PendidikanProps = props.JsonData.Pendidikan;
+const About = () => {
+  const [education, setEducation] = useState([]);
+
+  const getEducation = async () => {
+    const response = await axios.get("http://localhost:4000/education");
+
+    setEducation(response.data);
+  };
+
+  useEffect(() => {
+    getEducation();
+  }, []);
+
+  // fungsi convert tanggal
+  const ubahformatTanggal = (tanggal) => {
+    const options = { year: "numeric", month: "long", day: "numeric" };
+    const tanggalObj = new Date(tanggal);
+    return tanggalObj.toLocaleDateString("id-ID", options);
+  };
 
   const { t } = useTranslation();
   return (
@@ -24,7 +42,7 @@ const About = (props) => {
               <img src={Image} alt="about-content-profile-imageProfile" />
               {/* Tabs */}
               <Tabs>
-                <div label={t("tentang")}>
+                <div label="About Me">
                   <p className="indent-3 mb-2 text-primary-shades-500 dark:text-primary-tints-400">
                     {t("DescAbout1")}
                   </p>
@@ -32,14 +50,15 @@ const About = (props) => {
                     {t("DescAbout2")}
                   </p>
                 </div>
-                <div label={t("pendidikan")}>
-                  {PendidikanProps.map((data) => (
+                <div label="Education">
+                  {education.map((data) => (
                     <div key={data.id} className="group-education">
-                      <p className="group-education-insitusi">{data.Name}</p>
+                      <p className="group-education-insitusi">{data.name}</p>
                       <p className="group-education-tahun">
-                        {data.DateStart} - {data.DateEnd}
+                        {ubahformatTanggal(data.dateStart)} -{" "}
+                        {ubahformatTanggal(data.dateEnd)}
                       </p>
-                      <p className="group-education-kejuruan">{data.Jurusan}</p>
+                      <p className="group-education-kejuruan">{data.jurusan}</p>
                     </div>
                   ))}
                 </div>

@@ -7,7 +7,7 @@ import { IoCaretDown, IoSearch } from "react-icons/io5";
 import { useTranslation } from "react-i18next";
 import Fade from "react-reveal/Fade";
 
-const Header = ({ breadcrumb, data, isHidden, isProject }) => {
+const Header = ({ breadcrumb, dataTitle, isHidden, isProject }) => {
   const { t } = useTranslation();
 
   const [isOpenSearch, setIsOpenSearch] = useState(false);
@@ -38,7 +38,7 @@ const Header = ({ breadcrumb, data, isHidden, isProject }) => {
 
         {/* column 2 */}
 
-        {isHidden ? <></> : <div className="Header-title">{data.Name}</div>}
+        {isHidden ? <></> : <div className="Header-title">{dataTitle}</div>}
 
         {/* Search form */}
         {isProject ? (

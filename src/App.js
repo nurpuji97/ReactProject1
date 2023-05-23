@@ -1,13 +1,11 @@
 import { useSelector } from "react-redux";
-import { BrowserRouter, Routes, Route, useParams } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import DetailCard from "./pages/DetailCard";
 import Project from "./pages/Project";
 
 function App() {
   const isDarkMode = useSelector((state) => state.dark.isDarkMode);
-
-  let { id } = useParams();
 
   return (
     <div
@@ -17,7 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Project" element={<Project />} />
-          <Route path="/:id" element={<DetailCard />} />
+          <Route path="/Project/:id" element={<DetailCard />} />
         </Routes>
       </BrowserRouter>
     </div>
