@@ -300,10 +300,6 @@
     @apply flex gap-2 es:max-sm:self-center;
   }
 
-  .sosmed-footer img {
-    @apply hover:w-[20px] dark:bg-primary-tints-500;
-  }
-
   .privasi-footer {
     @apply flex gap-4 text-primary-shades-500 dark:text-primary-tints-500 text-sm pb-3 es:max-sm:self-center;
   }
@@ -441,5 +437,10 @@
   /* error Message */
   .errorMessage {
     @apply mb-[5px] font-light text-primary-tints-100 text-sm;
+  }
+
+  /* Toast */
+  .toast-message {
+    @apply bg-primary-tints-400 text-primary-shades-300;
   }
 }

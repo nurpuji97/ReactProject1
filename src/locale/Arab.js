@@ -52,5 +52,7 @@ export default {
     Penulis: "كاتب",
     Alat: "أداة",
     Unduh: "تحميل",
+    tersimpan: "البيانات المحفوظة",
+    gagal: "فشل حفظ البيانات",
   },
 };

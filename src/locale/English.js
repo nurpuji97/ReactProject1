@@ -52,5 +52,7 @@ export default {
     Penulis: "Writer",
     Alat: "Tools",
     Unduh: "Download",
+    tersimpan: "Data Saved",
+    gagal: "Data Failed to Save",
   },
 };

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, NavLink } from "react-router-dom";
 import Pagination from "../elements/Pagination/Pagination";
-import Fade from "react-reveal/Fade";
+
 import axios from "axios";
 import IconBack from "../images/Icon_Back.svg";
 import BreadCrumb from "../elements/Breadcrumb/Breadcrumb";
@@ -19,10 +19,6 @@ const ContentProject = ({ breadcrumb }) => {
   const [query, setQuery] = useState("");
   const [msg, setMsg] = useState("");
 
-  useEffect(() => {
-    getPortofolio();
-  }, [page, keyword]);
-
   const getPortofolio = async () => {
     const response = await axios.get(
       `http://localhost:4000/portofolio?search_query=${keyword}&page=${page}&limit=${limit}`
@@ -34,13 +30,13 @@ const ContentProject = ({ breadcrumb }) => {
     setRows(response.data.pagination.totalRows);
   };
 
+  useEffect(() => {
+    getPortofolio();
+  });
+
   const changePage = ({ selected }) => {
     setPage(selected);
     if (selected === 9) {
-      setMsg(
-        "Jika tidak ditemukan yang anda cari, cari data dengan kata kunci yang tepat"
-      );
-    } else if (selected === 0) {
       setMsg(
         "Jika tidak ditemukan yang anda cari, cari data dengan kata kunci yang tepat"
       );
@@ -60,7 +56,7 @@ const ContentProject = ({ breadcrumb }) => {
   const { t } = useTranslation();
 
   return (
-    <Fade>
+    <>
       {/* header */}
       <div className="Header">
         {/* column 1 */}
@@ -121,7 +117,7 @@ const ContentProject = ({ breadcrumb }) => {
           <Pagination row={rows} pageChange={changePage} pageCount={pages} />
         )}
       </div>
-    </Fade>
+    </>
   );
 };
 

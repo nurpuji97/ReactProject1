@@ -52,5 +52,7 @@ export default {
     Penulis: "Penulis",
     Alat: "Alat",
     Unduh: "Unduh",
+    tersimpan: "Data Tersimpan",
+    gagal: "Data gagal Disimpan",
   },
 };
