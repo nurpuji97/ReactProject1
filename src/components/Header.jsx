@@ -1,15 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import IconBack from "../images/Icon_Back.svg";
 import BreadCrumb from "../elements/Breadcrumb/Breadcrumb";
-import { IoCaretDown, IoSearch } from "react-icons/io5";
 
 import { useTranslation } from "react-i18next";
 
 const Header = ({ breadcrumb, dataTitle, isHidden, isProject }) => {
   const { t } = useTranslation();
-
-  const [isOpenSearch, setIsOpenSearch] = useState(false);
 
   return (
     <div className="Header">
@@ -31,40 +28,12 @@ const Header = ({ breadcrumb, dataTitle, isHidden, isProject }) => {
         )}
 
         {/* Breadcrumb */}
-        <BreadCrumb items={breadcrumb} />
+        {isHidden ? <></> : <BreadCrumb items={breadcrumb} />}
       </div>
 
       {/* column 2 */}
 
       {isHidden ? <></> : <div className="Header-title">{dataTitle}</div>}
-
-      {/* Search form */}
-      {isProject ? (
-        <>
-          <form className="search-form">
-            <input type="text" className="input-search" />
-            <div
-              className="btn-search"
-              onClick={() => setIsOpenSearch(!isOpenSearch)}
-            >
-              All
-              <IoCaretDown className="self-center ml-4" />
-              {isOpenSearch && (
-                <ul className="dropdown-menu-search">
-                  <li className="dropdown-menu-list-search">All</li>
-                  <li className="dropdown-menu-list-search">Front End</li>
-                  <li className="dropdown-menu-list-search">Back End</li>
-                </ul>
-              )}
-            </div>
-            <button className="submit-button">
-              <IoSearch />
-            </button>
-          </form>
-        </>
-      ) : (
-        <></>
-      )}
     </div>
   );
 };

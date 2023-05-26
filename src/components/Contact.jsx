@@ -37,13 +37,13 @@ const Contact = () => {
     });
   };
 
-  // // hapus Data
-  // const clearData = () => {
-  //   FormData.name = "";
-  //   FormData.email = "";
-  //   FormData.telp = "";
-  //   FormData.komentar = "";
-  // };
+  // hapus Data
+  const clearData = () => {
+    formData.name = "";
+    formData.email = "";
+    formData.noTlp = "";
+    formData.komentar = "";
+  };
 
   // Validasi Data
   const validate = () => {
@@ -64,10 +64,10 @@ const Contact = () => {
     }
 
     if (!formData.noTlp) {
-      errors.telp = t("TelpKosong");
+      errors.noTlp = t("TelpKosong");
       valid = false;
     } else if (!/[0-9+]$/.test(formData.noTlp)) {
-      errors.telp = t("TelpFormat");
+      errors.noTlp = t("TelpFormat");
       valid = false;
     }
 
@@ -84,32 +84,19 @@ const Contact = () => {
     e.preventDefault();
     if (validate()) {
       // Submit Data
-
-      // const formData = new FormData();
-      // formData.append("name", name);
-      // formData.append("email", email);
-      // formData.append("noTlp", noTlp);
-      // formData.append("komentar", komentar);
-
       try {
-        axios
-          .post("http://localhost:4000/contact/", formData, {
-            headers: {
-              "Content-Type": "application/json",
-            },
-          })
-          .then((response) => {
-            console.log(response.data);
-          })
-          .catch((error) => {
-            console.log(error);
-          });
+        axios.post("http://localhost:4000/contact/", formData, {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
         showToastMessage();
       } catch (err) {
         console.log(err.message);
       }
     }
-    console.log(formData);
+    // console.log(formData);
+    clearData();
   };
   return (
     <div id="Contact" className="contact">

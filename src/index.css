@@ -434,13 +434,31 @@
     dark:text-primary-tints-500 dark:hover:text-primary-shades-500;
   }
 
+  /* Policy */
+  .policy,
+  .FAQ {
+    @apply py-14 px-20 es:max-lg:py-3 es:max-lg:px-10;
+  }
+
+  .header1 {
+    @apply text-primary-shades-500 font-bold text-3xl mb-6 dark:text-primary-tints-500;
+  }
+
+  .header2 {
+    @apply text-primary-shades-500 font-bold text-xl mb-4 dark:text-primary-tints-500;
+  }
+
+  .text1 {
+    @apply mb-6;
+  }
+
+  .text1 p,
+  p {
+    @apply text-primary-shades-400 dark:text-primary-tints-400 odd:mb-2;
+  }
+
   /* error Message */
   .errorMessage {
     @apply mb-[5px] font-light text-primary-tints-100 text-sm;
-  }
-
-  /* Toast */
-  .toast-message {
-    @apply bg-primary-tints-400 text-primary-shades-300;
   }
 }
