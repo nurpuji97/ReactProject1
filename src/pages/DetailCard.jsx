@@ -26,12 +26,10 @@ const DetailCard = () => {
 
   const getDetailCardById = async () => {
     const response = await axios.get(`http://localhost:4000/portofolio/${id}`);
-    const dataTitle = response.data.find((test) => test.id === id);
-    setDetailCardTitle(dataTitle.name);
-    setDetailCard(dataTitle);
-    setPortoTools(dataTitle.PortofolioToolImages);
-    setPortoDownload(dataTitle.PortofolioDownloads);
-    // console.log(response);
+    setDetailCardTitle(response.data.name);
+    setDetailCard(response.data);
+    setPortoTools(response.data.PortofolioToolImages);
+    setPortoDownload(response.data.PortofolioDownloads);
   };
 
   // console.log(detailCardTitle);

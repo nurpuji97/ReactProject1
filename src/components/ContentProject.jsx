@@ -30,6 +30,8 @@ const ContentProject = ({ breadcrumb }) => {
     setRows(response.data.pagination.totalRows);
   };
 
+  // console.log(portofolio);
+
   useEffect(() => {
     getPortofolio();
   });
